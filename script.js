@@ -1,6 +1,6 @@
 // Konfigurasi
 const config = {
-  formUrl: 'https://forms.gle/wivwoi7DoHMBpZmn6',
+  formUrl: 'https://forms.gle/yhmiDqv4nU9kxtV9A',
   animationDelay: 300,  // Waktu tunggu sebelum animasi dimulai (ms)
   fadeInDuration: 800,  // Durasi fade in (ms)
   enableConsoleLog: true // Untuk debugging
