@@ -81,10 +81,24 @@ footer {
   text-align: right;
   line-height: 2.5rem;
   color: #0c0c0c;
+  padding: 16px;
 }
 
-/* === Basmalah === */
-.basmalah-container {
+/* === Tulisan Arab === */
+.arab-doa {
+  font-family: 'KFGQ', serif;
+  font-size: 2rem;
+  direction: rtl;
+  text-align: center;
+  line-height: 2.5rem;
+  color: #0c0c0c;
+  background-color: #eeedbb;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+/* === Doa Pembuka === */
+.doa-pembuka {
   display: flex;
   justify-content: center;
   margin: 20px 0;
@@ -189,7 +203,7 @@ footer {
   justify-content: center;
   width: 60px;
   height: 60px;
-  background-color: #4CAF50;
+  background-color: #1b887d;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -198,7 +212,7 @@ footer {
 }
 
 .suggestion-box:hover {
-  background-color: #45a049;
+  background-color: #00695c;
   transform: scale(1.1);
 }
 
