@@ -1,0 +1,176 @@
+/* === Font Tambahan === */
+@font-face {
+  font-family: 'KFGQ';
+  src: url('https://cdn.jsdelivr.net/gh/aliftype/quran-fonts@main/KFGQPC%20Uthman%20Taha%20Naskh%20Script/KFGQPC%20Uthman%20Taha%20Naskh%20Script.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* === Umum / Global === */
+body {
+  font-family: 'El Messiri', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+/* === Header === */
+header {
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: center;
+  background: linear-gradient(to right, #00695c, #263238);
+  color: white;
+  padding: 30px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+/* === Navigasi === */
+nav button {
+  background-color: #1b887d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #d4af37;
+  color: #004d40;
+}
+
+/* === Main Content === */
+main {
+  padding: 20px;
+}
+
+/* === Section Tampil Sembunyi === */
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eeeeee;
+  margin-top: 2rem;
+}
+
+/* === Tulisan Arab === */
+.arab {
+  font-family: 'KFGQ', serif;
+  font-size: 2rem;
+  direction: rtl;
+  text-align: right;
+  line-height: 2.5rem;
+  color: #0c0c0c;
+}
+
+/* === Basmalah === */
+.basmalah-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* === Bacaan Sholat === */
+.sholat {
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.sholat:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.sholat:nth-child(even) {
+  background-color: #eeedbb;
+}
+
+/* === Dzikir === */
+.dzikir {
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dzikir:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.dzikir:nth-child(even) {
+  background-color: #eeedbb;
+}
+
+/* === Bacaan Doa === */
+.doa {
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.doa:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.doa:nth-child(even) {
+  background-color: #eeedbb;
+}
+
+/* === Dalil Populer === */
+.dalil {
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dalil:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.dalil:nth-child(even) {
+  background-color: #eeedbb;
+}
+
+/* === Hero Section === */
+.judul-utama {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.kutipan {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #f0f0f0;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
