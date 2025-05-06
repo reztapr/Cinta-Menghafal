@@ -97,6 +97,11 @@ footer {
   border-radius: 12px;
 }
 
+/* Atur teks judul dan artinya agar rata tengah */
+#home h2, #home p {
+  text-align: center;
+}
+
 /* === Doa Pembuka === */
 .doa-pembuka {
   display: flex;
