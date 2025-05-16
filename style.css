@@ -6,6 +6,25 @@
   font-style: normal;
 }
 
+/* === Responsif Mobile === */
+@media (max-width: 600px) {
+  header {
+    font-size: 1.5rem;
+    padding: 16px 5px;
+  }
+  .judul-utama {
+    font-size: 2rem;
+  }
+  nav button {
+    padding: 8px 12px;
+    margin: 5px;
+    font-size: 0.95rem;
+  }
+  main {
+    padding: 10px;
+  }
+}
+
 /* === Umum / Global === */
 body {
   font-family: 'El Messiri', sans-serif;
@@ -13,6 +32,10 @@ body {
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
+}
+
+body, header, nav button, .sholat, .dzikir, .doa, .dalil, .arab, .arab-doa, .latin, footer {
+  transition: background 0.4s, color 0.4s;
 }
 
 .hidden {
@@ -42,13 +65,18 @@ nav button {
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 nav button:hover {
   background-color: #d4af37;
   color: #004d40;
+}
+
+nav button:focus {
+  outline: 2px solid #d4af37;
+  outline-offset: 2px;
 }
 
 /* === Main Content === */
@@ -60,7 +88,6 @@ main {
 .content-section {
   display: none;
 }
-
 .content-section.active {
   display: block;
 }
@@ -84,7 +111,6 @@ footer {
   padding: 16px;
 }
 
-/* === Tulisan Arab === */
 .arab-doa {
   font-family: 'KFGQ', serif;
   font-size: 2rem;
@@ -116,11 +142,9 @@ footer {
   margin-bottom: 16px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
-
 .sholat:nth-child(odd) {
   background-color: #ffffff;
 }
-
 .sholat:nth-child(even) {
   background-color: #eeedbb;
 }
@@ -132,11 +156,9 @@ footer {
   margin-bottom: 16px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
-
 .dzikir:nth-child(odd) {
   background-color: #ffffff;
 }
-
 .dzikir:nth-child(even) {
   background-color: #eeedbb;
 }
@@ -148,11 +170,9 @@ footer {
   margin-bottom: 16px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
-
 .doa:nth-child(odd) {
   background-color: #ffffff;
 }
-
 .doa:nth-child(even) {
   background-color: #eeedbb;
 }
@@ -164,11 +184,9 @@ footer {
   margin-bottom: 16px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
-
 .dalil:nth-child(odd) {
   background-color: #ffffff;
 }
-
 .dalil:nth-child(even) {
   background-color: #eeedbb;
 }
@@ -180,7 +198,7 @@ footer {
   margin-bottom: 5px;
   color: white;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .kutipan {
@@ -192,9 +210,10 @@ footer {
   line-height: 1.5;
   max-width: 800px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-/* Style untuk kotak saran */
+/* === Style untuk kotak saran (Suggestion Box) === */
 .suggestion-box-container {
   position: fixed;
   bottom: 20px;
@@ -214,6 +233,7 @@ footer {
   position: relative;
   transition: all 0.3s ease;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .suggestion-box:hover {
@@ -257,4 +277,92 @@ footer {
   border-width: 5px;
   border-style: solid;
   border-color: #333 transparent transparent transparent;
+}
+
+/* Atur warna font untuk teks latin */
+.latin {
+  color: #00695c;
+  font-style: italic;
+}
+
+/* === Dark Mode === */
+body.darkmode {
+  background-color: #181a1b;
+  color: #e0e0e0;
+}
+
+body.darkmode header {
+  background: linear-gradient(to right, #0F3443, #17806d);
+  color: #e0e0e0;
+}
+
+body.darkmode .judul-utama {
+  color: #fff;
+}
+
+body.darkmode .kutipan {
+  color: #cccccc;
+}
+
+body.darkmode nav button {
+  background-color: #232526;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+body.darkmode nav button:hover {
+  background-color: #d4af37;
+  color: #232526;
+  border: 1px solid #d4af37;
+}
+
+body.darkmode .sholat,
+body.darkmode .dzikir,
+body.darkmode .doa,
+body.darkmode .dalil {
+  background-color: #232526 !important;
+  color: #e0e0e0;
+}
+
+body.darkmode .arab-doa {
+  color: #fff;
+  background-color: #333 !important;
+}
+
+body.darkmode .arab {
+  color: #fff;
+}
+
+body.darkmode .latin {
+  color: #80cbc4;
+}
+
+body.darkmode footer {
+  background-color: #232526;
+  color: #e0e0e0;
+}
+
+/* Tombol Darkmode */
+.darkmode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: #009688;
+  color: #e0ffe6;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  transition: background 0.3s, color 0.3s;
+}
+
+.darkmode-toggle:hover {
+  background: #232526;
+  color: #fff;
 }
