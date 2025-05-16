@@ -10,586 +10,656 @@
 </head>
 <body>
   <header>
-    <section class="hero"></section>
+    <button id="darkModeToggle" class="darkmode-toggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon" id="icon-moon"></i>
+      <i class="fas fa-sun" id="icon-sun" style="display:none"></i>
+    </button>
+    <section class="hero">
       <h1 class="judul-utama">Mahabbatul Hifzh</h1>
       <p class="kutipan">“Barang siapa yang keluar untuk mencari ilmu, maka ia berada di jalan Allah hingga ia pulang.”</p>
     </section>
-      <nav>
-        <button onclick="showSection('home')">Beranda</button>
-        <button onclick="showSection('sholat')">Bacaan Sholat</button>
-        <button onclick="showSection('dzikir')">Dzikir</button>
-        <button onclick="showSection('doa')">Bacaan Doa</button>
-        <button onclick="showSection('dalil')">Dalil Populer</button>
-      </nav>
+    <nav>
+      <button onclick="showSection('home')">Beranda</button>
+      <button onclick="showSection('sholat')">Bacaan Sholat</button>
+      <button onclick="showSection('dzikir')">Dzikir</button>
+      <button onclick="showSection('doa')">Bacaan Doa</button>
+      <button onclick="showSection('dalil')">Dalil Populer</button>
+    </nav>
   </header>
 
   <main>
     <section id="home" class="content-section active">
-      <h2>Doa Memohon Pemahaman Agama
-      </h2>
+      <h2>Doa Memohon Pemahaman Agama</h2>
       <div class="doa-pembuka">
-        <span class="arab-doa">اَللّٰهُمَّ فَقِّهْنِي فِي الدِّينِ وَعَلِّمْنِي التَّأْوِيلَا
-        </span>
+        <span class="arab-doa">اَللّٰهُمَّ فَقِّهْنِي فِي الدِّينِ وَعَلِّمْنِي التَّأْوِيلَا</span>
       </div>
+      <p class="latin">Allahumma faqqihni fid-din, wa ‘allimni at-ta’wila</p>
       <p>Artinya: "Ya Allah, berilah aku pemahaman dalam agama dan ajarkanlah aku takwil (tafsir Al-Qur'an)."</p>
     </section>
 
+    <!-- Section Bacaan Sholat -->
     <section id="sholat" class="content-section hidden">
       <h2>Bacaan Sholat</h2>
-      
       <div class="sholat">
-        <h3>Doa Iftitah</h3>
-        <p class="arab">اللَّهُ أَكْبَرُ كَبِيرًا، وَالْحَمْدُ لِلَّهِ كَثِيرًا، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا، وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ، لَا شَرِيكَ لَهُ، وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ</p>
-        <p><strong>Artinya:</strong> "Allah Maha Besar dengan segala kebesaran, segala puji bagi Allah dengan pujian yang banyak, Maha Suci Allah baik waktu pagi dan petang. Aku hadapkan wajahku kepada Dzat yang menciptakan langit dan bumi sebagai muslim yang ikhlas, dan aku bukan termasuk orang yang musyrik. Sesungguhnya shalatku, sembelihanku, hidupku dan matiku hanya semata-mata untuk Allah Rabb semesta alam. Tidak ada sekutu bagi-Nya. Oleh karena itu aku patuh kepada perintah-Nya, dan aku termasuk orang yang berserah diri."</p>
-        <p class="sumber">(HR. Muslim No. 601 & 771)</p>
-    </div>
-      
-      <div class="sholat">
-        <h3>Bacaan Ruku'</h3>
-        <p class="arab">سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ</p>
-        <p><strong>Artinya:</strong> "Maha Suci Tuhanku Yang Maha Agung dan dengan memuji-Nya."</p>
+          <h3>Doa Iftitah</h3>
+          <p class="arab">اللَّهُ أَكْبَرُ كَبِيرًا، وَالْحَمْدُ لِلَّهِ كَثِيرًا، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا، وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ، لَا شَرِيكَ لَهُ، وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ</p>
+          <p class="latin">Allahu akbaru kabiran, walhamdu lillahi katsiran, wa subhanallahi bukratan wa asila, wajjahtu wajhiya lilladzi fataras samawati wal ardha hanifan musliman wama ana minal musyrikin, inna shalati wa nusuki wa mahyaya wa mamati lillahi rabbil 'alamin, laa syarika lahu, wabidzalika umirtu wa ana minal muslimin</p>
+          <p><strong>Artinya:</strong> "Allah Maha Besar dengan segala kebesaran, segala puji bagi Allah dengan pujian yang banyak, Maha Suci Allah baik waktu pagi dan petang. Aku hadapkan wajahku kepada Dzat yang menciptakan langit dan bumi sebagai muslim yang ikhlas, dan aku bukan termasuk orang yang musyrik. Sesungguhnya shalatku, sembelihanku, hidupku dan matiku hanya semata-mata untuk Allah Rabb semesta alam. Tidak ada sekutu bagi-Nya. Oleh karena itu aku patuh kepada perintah-Nya, dan aku termasuk orang yang berserah diri."</p>
+          <p class="sumber">(HR. Muslim No. 601 & 771)</p>
       </div>
-    
-      <div class="sholat">
-        <h3>Bacaan I'tidal</h3>
-        <p class="arab">سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ</p>
-        <p><strong>Bacaan saat bangun dari ruku':</strong> "Allah mendengar orang yang memuji-Nya."</p>
-        
-        <p class="arab">رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَاوَاتِ وَمِلْءَ الْأَرْضِ وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ</p>
-        <p><strong>Doa i'tidal:</strong> "Ya Tuhan kami, bagi-Mu segala puji sepenuh langit dan bumi, dan sepenuh apa yang Engkau kehendaki setelah itu."</p>
-    </div>
-    
-      <div class="sholat">
-        <h3>Bacaan Sujud</h3>
-        <p class="arab">سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ</p>
-        <p><strong>Artinya:</strong> "Maha Suci Tuhanku Yang Maha Tinggi dan dengan memuji-Nya."</p>
-      </div>
-    
-      <div class="sholat">
-        <h3>Bacaan Duduk Diantara Dua Sujud</h3>
-        <p class="arab">رَبِّ اغْفِرْ لِي وَارْحَمْنِي وَاجْبُرْنِي وَارْفَعْنِي وَارْزُقْنِي وَاهْدِنِي وَعَافِنِي وَاعْفُ عَنِّي</p>
-        <p><strong>Artinya:</strong> "Ya Allah, ampunilah aku, rahmatilah aku, cukupkanlah aku, angkatlah derajatku, berilah rezeki kepadaku, berilah aku petunjuk, berilah kesehatan kepadaku dan ampunilah aku."</p>
-      </div>
-    
-      <div class="sholat">
-        <h3>Tasyahud Awal</h3>
-        <p class="arab">التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ</p>
-        <p><strong>Artinya:</strong> "Segala kehormatan, keberkahan, shalawat, dan kebaikan milik Allah. Keselamatan atasmu wahai Nabi, beserta rahmat Allah dan berkah-Nya. Keselamatan dicurahkan kepada kami dan hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah rahmat kepada Nabi Muhammad."</p>
-    </div>
 
-    <div class="sholat">
-        <h3>Tasyahud Akhir</h3>
-        <p class="arab">
-            التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، فِي الْعَالَمِينَ إِنَّكَ حَمِيدٌ مَجِيدٌ
-        </p>
-        <p><strong>Artinya:</strong> 
-            "Segala kehormatan, keberkahan, shalawat, dan kebaikan milik Allah. Keselamatan atasmu wahai Nabi, beserta rahmat Allah dan berkah-Nya. Keselamatan dicurahkan kepada kami dan hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah rahmat kepada Nabi Muhammad dan keluarganya, sebagaimana Engkau telah melimpahkan rahmat kepada Nabi Ibrahim dan keluarganya. Berkatilah Nabi Muhammad dan keluarganya, sebagaimana Engkau telah memberkati Nabi Ibrahim dan keluarganya. Di seluruh alam semesta, Engkaulah Yang Maha Terpuji lagi Maha Mulia."
-        </p>
-    </div>
+      <div class="sholat">
+          <h3>Bacaan Ruku'</h3>
+          <p class="arab">سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ</p>
+          <p class="latin">Subhana rabbiyal 'azimi wa bihamdih</p>
+          <p><strong>Artinya:</strong> "Maha Suci Tuhanku Yang Maha Agung dan dengan memuji-Nya."</p>
+      </div>
+
+      <div class="sholat">
+          <h3>Bacaan I'tidal</h3>
+          <p class="arab">سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ</p>
+          <p class="latin">Sami'allahu liman hamidah</p>
+          <p><strong>Bacaan saat bangun dari ruku':</strong> "Allah mendengar orang yang memuji-Nya."</p> 
+          <p class="arab">رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَاوَاتِ وَمِلْءَ الْأَرْضِ وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ</p>
+          <p class="latin">Rabbana lakal hamdu mil'as samawati wa mil'al ardhi wa mil'a ma syi'ta min syai'in ba'du</p>
+          <p><strong>Doa i'tidal:</strong> "Ya Tuhan kami, bagi-Mu segala puji sepenuh langit dan bumi, dan sepenuh apa yang Engkau kehendaki setelah itu."</p>
+      </div>
+
+      <div class="sholat">
+          <h3>Bacaan Sujud</h3>
+          <p class="arab">سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ</p>
+          <p class="latin">Subhana rabbiyal a'la wa bihamdih</p>
+          <p><strong>Artinya:</strong> "Maha Suci Tuhanku Yang Maha Tinggi dan dengan memuji-Nya."</p>
+      </div>
+
+      <div class="sholat">
+          <h3>Bacaan Duduk Diantara Dua Sujud</h3>
+          <p class="arab">رَبِّ اغْفِرْ لِي وَارْحَمْنِي وَاجْبُرْنِي وَارْفَعْنِي وَارْزُقْنِي وَاهْدِنِي وَعَافِنِي وَاعْفُ عَنِّي</p>
+          <p class="latin">Rabbighfirli warhamni wajburni warfa'ni warzuqni wahdini wa 'afini wa'fu 'anni</p>
+          <p><strong>Artinya:</strong> "Ya Allah, ampunilah aku, rahmatilah aku, cukupkanlah aku, angkatlah derajatku, berilah rezeki kepadaku, berilah aku petunjuk, berilah kesehatan kepadaku dan ampunilah aku."</p>
+      </div>
+
+      <div class="sholat">
+          <h3>Tasyahud Awal</h3>
+          <p class="arab">التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ</p>
+          <p class="latin">At-tahiyyatul mubarakatush shalawatuth thayyibatu lillah. Assalamu 'alaika ayyuhan nabiyyu wa rahmatullahi wa barakatuh. Assalamu 'alaina wa 'ala 'ibadillahis salihin. Asyhadu an la ilaha illallah wa asyhadu anna muhammadar rasulullah. Allahumma shalli 'ala muhammad.</p>
+          <p><strong>Artinya:</strong> "Segala kehormatan, keberkahan, shalawat, dan kebaikan milik Allah. Keselamatan atasmu wahai Nabi, beserta rahmat Allah dan berkah-Nya. Keselamatan dicurahkan kepada kami dan hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah rahmat kepada Nabi Muhammad."</p>
+      </div>
+
+      <div class="sholat">
+          <h3>Tasyahud Akhir</h3>
+          <p class="arab">التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، فِي الْعَالَمِينَ إِنَّكَ حَمِيدٌ مَجِيدٌ</p>
+          <p class="latin">At-tahiyyatul mubarakatush shalawatuth thayyibatu lillah. Assalamu 'alaika ayyuhan nabiyyu wa rahmatullahi wa barakatuh. Assalamu 'alaina wa 'ala 'ibadillahis salihin. Asyhadu an la ilaha illallah wa asyhadu anna muhammadar rasulullah. Allahumma shalli 'ala muhammadin wa 'ala ali muhammad. Kama shallaita 'ala ibrahima wa 'ala ali ibrahim. Wa barik 'ala muhammadin wa 'ala ali muhammad. Kama barakta 'ala ibrahima wa 'ala ali ibrahim. Fil 'alamina innaka hamidum majid.</p>
+          <p><strong>Artinya:</strong> "Segala kehormatan, keberkahan, shalawat, dan kebaikan milik Allah. Keselamatan atasmu wahai Nabi, beserta rahmat Allah dan berkah-Nya. Keselamatan dicurahkan kepada kami dan hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah rahmat kepada Nabi Muhammad dan keluarganya, sebagaimana Engkau telah melimpahkan rahmat kepada Nabi Ibrahim dan keluarganya. Berkatilah Nabi Muhammad dan keluarganya, sebagaimana Engkau telah memberkati Nabi Ibrahim dan keluarganya. Di seluruh alam semesta, Engkaulah Yang Maha Terpuji lagi Maha Mulia."</p>
+      </div>
     </section>
 
+    <!-- Section Dzikir -->
     <section id="dzikir" class="content-section hidden">
       <h2>Dzikir</h2>
-   
       <div class="dzikir">
-        <h3>Istighfar (3x)</h3>
-        <p class="arab">أَسْتَغْفِرُ اللهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ</p>
-        <p><strong>Artinya:</strong> "Saya memohon ampun kepada Allah Yang Mahaagung, yang tiada Tuhan (yang berhak disembah), melainkan Dia, yang senantiasa hidup lagi mengurusi segala sesuatu dengan sendiri-Nya, dan saya bertaubat kepada-Nya."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Kalimat Tauhid (3x)</h3>
-        <p class="arab">لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ</p>
-        <p><strong>Artinya:</strong> "Tiada Tuhan (yang berhak disembah), melainkan hanya Allah Yang Maha Esa, tidak ada sekutu bagi-Nya. Dia-lah yang mempunyai kekuasaan dan bagi-Nya segala pujian, yang menghidupkan dan mematikan, dan Dia berkuasa atas segala sesuatu."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Doa Keselamatan</h3>
-        <p class="arab">اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ وَإِلَيْكَ يَعُودُ السَّلَامُ فَحَيِّنَا رَبَّنَا بِالسَّلَامِ وَأَدْخِلْنَا الْجَنَّةَ دَارَ السَّلَامِ تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, Engkau adalah Dzat yang mempunyai kesejahteraan, dari Engkaulah segala kesejahteraan, dan kepada-Mu-lah akan kembali lagi segala kesejahteraan itu. Ya Tuhan kami, hidupkanlah kami dengan sejahtera dan masukkanlah kami ke dalam surga kampung kesejahteraan. Engkaulah yang kuasa memberikan keberkahan, ya Tuhan kami, wahai Dzat yang mempunyai keagungan dan kemuliaan."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Surat Al-Fatihah</h3>
-        <p class="arab">بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ (١) الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ (٢) الرَّحْمَنِ الرَّحِيمِ (٣) مَالِكِ يَوْمِ الدِّينِ (٤) إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ (٥) اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ (٦) صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ (٧) آمِين</p>
-        
-        <p><strong>Artinya:</strong><br>
-        1. "Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang."<br>
-        2. "Segala puji bagi Allah, Tuhan semesta alam."<br>
-        3. "Maha Pemurah lagi Maha Penyayang."<br>
-        4. "Yang menguasai di Hari Pembalasan."<br>
-        5. "Hanya Engkaulah yang kami sembah, dan hanya kepada Engkaulah kami meminta pertolongan."<br>
-        6. "Tunjukilah kami jalan yang lurus."<br>
-        7. "(Yaitu) jalan orang-orang yang telah Engkau beri nikmat kepada mereka; bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat."<br>
-        "Semoga Allah memperkenankan."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Al-Baqarah 163</h3>
-        <p class="arab">وَإِلَـٰهُكُمْ إِلَـٰهٌۭ وَٰحِدٌۭ ۖ لَّآ إِلَـٰهَ إِلَّا هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ</p>
-        <p><strong>Artinya:</strong> "Dan Tuhanmu adalah Tuhan Yang Maha Esa, tidak ada tuhan selain Dia, Yang Maha Pengasih lagi Maha Penyayang."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Ayat Kursi</h3>
-        <p class="arab">اللهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ</p>
-        <p><strong>Artinya:</strong> "Allah, tidak ada Tuhan (yang berhak disembah), melainkan Dia Yang Hidup kekal lagi terus-menerus mengurus (makhluk-Nya); tidak mengantuk dan tidak tidur. Kepunyaan-Nya apa yang di langit dan di bumi. Tiada yang dapat memberi syafaat di sisi Allah tanpa izin-Nya? Allah mengetahui apa-apa yang di hadapan mereka dan di belakang mereka, dan mereka tidak mengetahui apa-apa dari ilmu Allah, melainkan apa yang dikehendaki-Nya. Kursi Allah meliputi langit dan bumi. Dan Allah tidak merasa berat memelihara keduanya, dan Allah Maha Tinggi lagi Maha Besar."</p>
-    </div>
-    
-    <div class="dzikir">
-        <p class="arab">إِلٰهِيَ رَبِّي</p>
-        <p><strong>Artinya:</strong> "Ya Tuhan Kami."</p>
-        
-        <h3>Tasbih (33x)</h3>
-        <p class="arab">سُبْحَانَ اللهِ</p>
-        <p><strong>Artinya:</strong> "Mahasuci Allah."</p>
-        
-        <p class="arab">سُبْحَانَ اللهِ الْعَلِيِّ الْعَظِيْمِ وَبِحَمْدِهِ دَائِمًا</p>
-        <p><strong>Artinya:</strong> "Mahasuci Allah Yang Mahatinggi lagi Mahaagung, dan dengan memuji-Nya selalu."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Tahmid (33x)</h3>
-        <p class="arab">الْحَمْدُ لِلَّهِ</p>
-        <p><strong>Artinya:</strong> "Segala puji bagi Allah."</p>
-
-        <p class="arab">ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَالَمِينَ عَلَى كُلِّ حَالٍ وَنِعْمَةٍ</p>
-        <p><strong>Artinya:</strong> "Segala puji bagi Allah, Tuhan semesta alam, atas setiap keadaan dan nikmat."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Takbir (33x)</h3>
-        <p class="arab">اللهُ أَكْبَرُ</p>
-        <p><strong>Artinya:</strong> "Allah Mahabesar."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Kalimat Tamjid</h3>
-        <p class="arab">اللهُ أَكْبَرُ كَبِيرًا وَالْحَمْدُ لِلَّهِ كَثِيرًا وَسُبْحَانَ اللهِ بُكْرَةً وَأَصِيلًا، لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ</p>
-        <p><strong>Artinya:</strong> "Allah Mahabesar lagi sempurna kebesaran-Nya. Segala puji bagi Allah dengan pujian yang banyak. Mahasuci Allah sepanjang pagi dan petang. Tiada Tuhan (yang berhak disembah), melainkan hanya Allah Yang Maha Esa, tidak ada sekutu bagi-Nya. Dia-lah yang mempunyai kekuasaan dan bagi-Nya segala pujian, yang menghidupkan dan mematikan, dan Dia berkuasa atas segala sesuatu."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Hauqalah</h3>
-        <p class="arab">لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ الْعَلِيِّ الْعَظِيمِ</p>
-        <p><strong>Artinya:</strong> "Tiada daya upaya dan kekuatan, melainkan dengan pertolongan Allah Yang Mahatinggi dan Mahaagung."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Istighfar (7x)</h3>
-        <p class="arab">أَسْتَغْفِرُ اللهَ الْعَظِيمَ</p>
-        <p><strong>Artinya:</strong> "Saya memohon ampun kepada Allah Yang Mahaagung."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Shalawat Nabi (7x)</h3>
-        <p class="arab">اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, limpahkanlah rahmat dan kesejahteraan kepada junjungan kami Nabi Muhammad."</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Dzikir Utama</h3>
-        <p class="arab">لَا إِلَهَ إِلَّا اللهُ</p>
-        <p><strong>Artinya:</strong> "Tiada Tuhan (yang berhak disembah), melainkan hanya Allah." (dibaca 100x)</p>
-    </div>
-    
-    <div class="dzikir">
-        <h3>Syahadat</h3>
-        <p class="arab">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ</p>
-        <p><strong>Artinya:</strong> "Tiada Tuhan (yang berhak disembah), melainkan hanya Allah, Nabi Muhammad adalah utusan Allah, semoga Allah memberikan kepadanya rahmat dan kesejahteraan."</p>
-    </div>
+          <h3>Istighfar (3x)</h3>
+          <p class="arab">أَسْتَغْفِرُ اللهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ</p>
+          <p class="latin">Astaghfirullāhal-‘Azhīma alladzī lā ilāha illā huwa al-Ḥayyu al-Qayyūmu wa atūbu ilayh.</p>
+          <p><strong>Artinya:</strong> "Saya memohon ampun kepada Allah Yang Mahaagung, yang tiada Tuhan (yang berhak disembah), melainkan Dia, yang senantiasa hidup lagi mengurusi segala sesuatu dengan sendiri-Nya, dan saya bertaubat kepada-Nya."</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Kalimat Tauhid (3x)</h3>
+          <p class="arab">لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ</p>
+          <p class="latin">Lā ilāha illallāhu waḥdahu lā syarīka lah, lahul-mulku wa lahul-ḥamdu yuḥyī wa yumītu wa huwa ‘alā kulli syay’in qadīr.</p>
+          <p><strong>Artinya:</strong> "Tiada Tuhan (yang berhak disembah), melainkan hanya Allah Yang Maha Esa, tidak ada sekutu bagi-Nya. Dia-lah yang mempunyai kekuasaan dan bagi-Nya segala pujian, yang menghidupkan dan mematikan, dan Dia berkuasa atas segala sesuatu."</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Doa Keselamatan</h3>
+          <p class="arab">اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ وَإِلَيْكَ يَعُودُ السَّلَامُ فَحَيِّنَا رَبَّنَا بِالسَّلَامِ وَأَدْخِلْنَا الْجَنَّةَ دَارَ السَّلَامِ تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ</p>
+          <p class="latin">Allāhumma anta as-salāmu wa minka as-salām, wa ilayka ya‘ūdu as-salām, faḥayyinā rabbana bis-salām, wa adkhilnā al-jannata dāra as-salām, tabārakta rabbana wa ta‘ālaita yā dzal-jalāli wal-ikrām.</p>
+          <p><strong>Artinya:</strong> "Ya Allah, Engkau adalah Dzat yang mempunyai kesejahteraan, dari Engkaulah segala kesejahteraan, dan kepada-Mu-lah akan kembali lagi segala kesejahteraan itu. Ya Tuhan kami, hidupkanlah kami dengan sejahtera dan masukkanlah kami ke dalam surga kampung kesejahteraan. Engkaulah yang kuasa memberikan keberkahan, ya Tuhan kami, wahai Dzat yang mempunyai keagungan dan kemuliaan."</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Surat Al-Fatihah</h3>
+          <p class="arab">بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ (١) الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ (٢) الرَّحْمَنِ الرَّحِيمِ (٣) مَالِكِ يَوْمِ الدِّينِ (٤) إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ (٥) اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ (٦) صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ (٧) آمِين</p>
+          <p class="latin">(1) Bismillāhir-raḥmānir-raḥīm (2) Al-ḥamdu lillāhi rabbil-‘ālamīn (3) Ar-raḥmānir-raḥīm (4) Māliki yaumid-dīn (5) Iyyāka na‘budu wa iyyāka nasta‘īn (6) Ihdinaṣ-ṣirāṭal-mustaqīm (7) Ṣirāṭal-ladzīna an‘amta ‘alayhim, ghayril-maghḍūbi ‘alayhim wa laḍ-ḍāllīn. Āmīn.</p>
+          <p><strong>Artinya:</strong> (1) "Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang." (2) "Segala puji bagi Allah, Tuhan semesta alam." (3) "Maha Pemurah lagi Maha Penyayang." (4) "Yang menguasai di Hari Pembalasan." (5) "Hanya Engkaulah yang kami sembah, dan hanya kepada Engkaulah kami meminta pertolongan." (6) "Tunjukilah kami jalan yang lurus." (7) "(Yaitu) jalan orang-orang yang telah Engkau beri nikmat kepada mereka; bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat." Semoga Allah memperkenankan.</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Al-Baqarah 163</h3>
+          <p class="arab">وَإِلَـٰهُكُمْ إِلَـٰهٌۭ وَٰحِدٌۭ ۖ لَّآ إِلَـٰهَ إِلَّا هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ</p>
+          <p class="latin">Wa ilāhukum ilāhun wāḥid, lā ilāha illā huwa ar-raḥmānu ar-raḥīm.</p>
+          <p><strong>Artinya:</strong> "Dan Tuhanmu adalah Tuhan Yang Maha Esa, tidak ada tuhan selain Dia, Yang Maha Pengasih lagi Maha Penyayang."</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Ayat Kursi</h3>
+          <p class="arab">اللهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ</p>
+          <p class="latin">Allāhu lā ilāha illā huwa al-Ḥayyu al-Qayyūm. Lā ta’khudzuhu sinatun wa lā nawm. Lahū mā fī as-samāwāti wa mā fī al-arḍ. Man dzā alladzī yasyfa‘u ‘indahu illā bi idznih. Ya‘lamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bisyay’in min ‘ilmihī illā bimā syā’. Wasi‘a kursiyyuhus-samāwāti wal-arḍ, wa lā ya’ūdū ḥifzuhumā, wa huwa al-‘Aliyyul-‘Azhīm.</p>
+          <p><strong>Artinya:</strong> "Allah, tidak ada Tuhan (yang berhak disembah), melainkan Dia Yang Hidup kekal lagi terus-menerus mengurus (makhluk-Nya); tidak mengantuk dan tidak tidur. Kepunyaan-Nya apa yang di langit dan di bumi. Tiada yang dapat memberi syafaat di sisi Allah tanpa izin-Nya? Allah mengetahui apa-apa yang di hadapan mereka dan di belakang mereka, dan mereka tidak mengetahui apa-apa dari ilmu Allah, melainkan apa yang dikehendaki-Nya. Kursi Allah meliputi langit dan bumi. Dan Allah tidak merasa berat memelihara keduanya, dan Allah Maha Tinggi lagi Maha Besar."</p>
+      </div>
+      
+      <div class="dzikir">
+          <p class="arab">إِلٰهِيَ رَبِّي</p>
+          <p class="latin">Ilāhiya rabbī.</p>
+          <p><strong>Artinya:</strong> "Ya Tuhan Kami."</p>
+          <h3>Tasbih (33x)</h3>
+          <p class="arab">سُبْحَانَ اللهِ</p>
+          <p class="latin">Subḥānallāh</p>
+          <p><strong>Artinya:</strong> "Mahasuci Allah."</p>
+          <p class="arab">سُبْحَانَ اللهِ الْعَلِيِّ الْعَظِيْمِ وَبِحَمْدِهِ دَائِمًا</p>
+          <p class="latin">Subḥānallāhil-‘Aliyyil-‘Azhīm wa biḥamdihī dā’iman.</p>
+          <p><strong>Artinya:</strong> "Mahasuci Allah Yang Mahatinggi lagi Mahaagung, dan dengan memuji-Nya selalu."</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Tahmid (33x)</h3>
+          <p class="arab">الْحَمْدُ لِلَّهِ</p>
+          <p class="latin">Al-ḥamdu lillāh</p>
+          <p><strong>Artinya:</strong> "Segala puji bagi Allah."</p>
+          <p class="arab">ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَالَمِينَ عَلَى كُلِّ حَالٍ وَنِعْمَةٍ</p>
+          <p class="latin">Al-ḥamdu lillāhi rabbil-‘ālamīn ‘alā kulli ḥālin wa ni‘mah.</p>
+          <p><strong>Artinya:</strong> "Segala puji bagi Allah, Tuhan semesta alam, atas setiap keadaan dan nikmat."</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Takbir (33x)</h3>
+          <p class="arab">اللهُ أَكْبَرُ</p>
+          <p class="latin">Allāhu akbar.</p>
+          <p><strong>Artinya:</strong> "Allah Mahabesar."</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Kalimat Tamjid</h3>
+          <p class="arab">اللهُ أَكْبَرُ كَبِيرًا وَالْحَمْدُ لِلَّهِ كَثِيرًا وَسُبْحَانَ اللهِ بُكْرَةً وَأَصِيلًا، لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ</p>
+          <p class="latin">Allāhu akbaru kabīrā, wal-ḥamdu lillāhi katsīrā, wa subḥānallāhi bukratan wa aṣīlā. Lā ilāha illallāhu waḥdahu lā syarīka lah, lahul-mulku wa lahul-ḥamdu, yuḥyī wa yumītu wa huwa ‘alā kulli syay’in qadīr.</p>
+          <p><strong>Artinya:</strong> "Allah Mahabesar lagi sempurna kebesaran-Nya. Segala puji bagi Allah dengan pujian yang banyak. Mahasuci Allah sepanjang pagi dan petang. Tiada Tuhan (yang berhak disembah), melainkan hanya Allah Yang Maha Esa, tidak ada sekutu bagi-Nya. Dia-lah yang mempunyai kekuasaan dan bagi-Nya segala pujian, yang menghidupkan dan mematikan, dan Dia berkuasa atas segala sesuatu."</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Hauqalah</h3>
+          <p class="arab">لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ الْعَلِيِّ الْعَظِيمِ</p>
+          <p class="latin">Lā ḥaula wa lā quwwata illā billāhil-‘Aliyyil-‘Azhīm.</p>
+          <p><strong>Artinya:</strong> "Tiada daya upaya dan kekuatan, melainkan dengan pertolongan Allah Yang Mahatinggi dan Mahaagung."</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Istighfar (7x)</h3>
+          <p class="arab">أَسْتَغْفِرُ اللهَ الْعَظِيمَ</p>
+          <p class="latin">Astaghfirullāhal-‘Azhīm.</p>
+          <p><strong>Artinya:</strong> "Saya memohon ampun kepada Allah Yang Mahaagung."</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Shalawat Nabi (7x)</h3>
+          <p class="arab">اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ</p>
+          <p class="latin">Allāhumma ṣalli wa sallim ‘alā sayyidinā Muḥammad.</p>
+          <p><strong>Artinya:</strong> "Ya Allah, limpahkanlah rahmat dan kesejahteraan kepada junjungan kami Nabi Muhammad."</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Dzikir Utama</h3>
+          <p class="arab">لَا إِلَهَ إِلَّا اللهُ</p>
+          <p class="latin">Lā ilāha illā Allāh.</p>
+          <p><strong>Artinya:</strong> "Tiada Tuhan (yang berhak disembah), melainkan hanya Allah." (dibaca 100x)</p>
+      </div>
+      
+      <div class="dzikir">
+          <h3>Syahadat</h3>
+          <p class="arab">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ</p>
+          <p class="latin">Lā ilāha illā Allāh, Muḥammadan rasūlullāh, ṣallā Allāhu ‘alayhi wa sallam.</p>
+          <p><strong>Artinya:</strong> "Tiada Tuhan (yang berhak disembah), melainkan hanya Allah, Nabi Muhammad adalah utusan Allah, semoga Allah memberikan kepadanya rahmat dan kesejahteraan."</p>
+      </div>
     </section>
 
+    <!-- Section Bacaan Doa -->
     <section id="doa" class="content-section hidden">
       <h2>Bacaan Doa</h2>
+      <div class="doa">
+          <h3>1. Doa Pembuka</h3>
+          <p class="arab">الْحَمْدُ لِلَّهِ حَمْدًا يُوَافِي نِعَمَهُ وَيُكَافِئُ مَزِيدَهُ يَا رَبَّنَا لَكَ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِكَ وَعَظِيمِ سُلْطَانِكَ</p>
+          <p class="latin">Al-ḥamdu lillāhi ḥamdan yuwāfī ni‘amahu wa yukāfī’u mazīdah. Yā Rabbana laka al-ḥamdu kamā yanbaghī li-jalālika wa ‘aẓīmi sulṭānik.</p>
+          <p><strong>Artinya:</strong> "Segala puji hanya milik Allah. Pujian yang sesuai dengan limpahan nikmat-Nya dan sesuai dengan segala apa yang Dia berikan. Wahai Rabb kami, hanya untuk-Mu lah segala puji. Sebagaimana pujian yang layak untuk keagungan dan kebesaran kerajaan-Mu."</p>
+      </div>
+      
+      <div class="doa">
+          <h3>2. Shalawat Nabi</h3>
+          <p class="arab">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ</p>
+          <p class="latin">Allāhumma ṣalli ‘alā Muḥammadin wa ‘alā ālihi wa ṣaḥbihi ajma‘īn.</p>
+          <p><strong>Artinya:</strong> "Ya Allah curahkanlah shalawat kepada baginda Muhammad, keluarga dan para sahabatnya."</p>
+      </div>
+      
+      <div class="doa">
+          <h3>3. Doa Ampunan untuk Keluarga dan Muslimin</h3>
+          <p class="arab">اللَّهُمَّ اغْفِرْ لَنَا ذُنُوبَنَا وَلِوَالِدَيْنَا وَارْحَمْهُمَا كَمَا رَبَّيَانَا صِغَارًا وَلِجَمِيعِ الْمُسْلِمِينَ وَالْمُسْلِمَاتِ وَالْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ الْأَحْيَاءِ مِنْهُمْ وَالْأَمْوَاتِ إِنَّكَ سَمِيعٌ قَرِيبٌ مُجِيبُ الدَّعَوَاتِ يَا قَاضِيَ الْحَاجَاتِ</p>
+          <p class="latin">Allāhumma ighfir lanā dhunūbanā wa liwālidaynā warḥamhumā kamā rabbaynā ṣighārā, walijamī‘il-muslimīna wal-muslimāt wal-mu’minīna wal-mu’mināt al-aḥyā’i minhum wal-amwāti innaka samī‘un qarībun mujībul-dhāwāt, yā qāḍiya al-ḥājāt.</p>
+          <p><strong>Artinya:</strong> "Ya Allah, ampunilah dosa kami, dosa orangtua kami, dan rahmatilah mereka sebagaimana mereka mendidik kami di waktu kecil. Dan ampunilah dosa-dosa semua orang Muslim, laki-laki dan perempuan. Ampunilah dosa-dosa orang beriman, laki-laki dan perempuan. Baik yang hidup ataupun yang mati. Sesungguhnya Engkau Maha Mendengar, Mahadekat dan Maha Mengabulkan semua doa. Wahai Zat Yang Memenuhi Semua Hajat."</p>
+      </div>
+      
+      <div class="doa">
+          <h3>4. Doa Keselamatan</h3>
+          <p class="arab">اللَّهُمَّ إِنَّا نَسْأَلُكَ سَلَامَةً فِي الدِّينِ وَعَافِيَةً فِي الْجَسَدِ وَبَرَكَةً فِي الرِّزْقِ وَتَوْبَةً قَبْلَ الْمَوْتِ وَرَحْمَةً عِنْدَ الْمَوْتِ وَمَغْفِرَةً بَعْدَ الْمَوْتِ</p>
+          <p class="latin">Allāhumma innā nas’aluka salāmah fid-dīn wa ‘āfiyatan fil-jasad wa barakatan fir-rizqi wa tawbatan qabla al-mawt wa raḥmatan ‘inda al-mawt wa maghfiratan ba‘da al-ma
+          <p><strong>Artinya:</strong> "Ya Allah, sesungguhnya kami memohon kepada-Mu keselamatan dalam agama kami, kesehatan pada badan kami, keberkahan dalam rezeki kami. Kami memohon tobat sebelum mati, rahmat ketika mati, dan ampunan setelah mati."</p>
+      </div>
 
       <div class="doa">
-        <h3>1. Doa Pembuka</h3>
-        <p class="arab">الْحَمْدُ لِلَّهِ حَمْدًا يُوَافِي نِعَمَهُ وَيُكَافِئُ مَزِيدَهُ يَا رَبَّنَا لَكَ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِكَ وَعَظِيمِ سُلْطَانِكَ</p>
-        <p><strong>Artinya:</strong> "Segala puji hanya milik Allah. Pujian yang sesuai dengan limpahan nikmat-Nya dan sesuai dengan segala apa yang Dia berikan. Wahai Rabb kami, hanya untuk-Mu lah segala puji. Sebagaimana pujian yang layak untuk keagungan dan kebesaran kerajaan-Mu."</p>
-    </div>
-    
-    <div class="doa">
-        <h3>2. Shalawat Nabi</h3>
-        <p class="arab">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ</p>
-        <p><strong>Artinya:</strong> "Ya Allah curahkanlah shalawat kepada baginda Muhammad, keluarga dan para sahabatnya."</p>
-    </div>
-    
-    <div class="doa">
-        <h3>3. Doa Ampunan untuk Keluarga dan Muslimin</h3>
-        <p class="arab">اللَّهُمَّ اغْفِرْ لَنَا ذُنُوبَنَا وَلِوَالِدَيْنَا وَارْحَمْهُمَا كَمَا رَبَّيَانَا صِغَارًا وَلِجَمِيعِ الْمُسْلِمِينَ وَالْمُسْلِمَاتِ وَالْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ الْأَحْيَاءِ مِنْهُمْ وَالْأَمْوَاتِ إِنَّكَ سَمِيعٌ قَرِيبٌ مُجِيبُ الدَّعَوَاتِ يَا قَاضِيَ الْحَاجَاتِ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, ampunilah dosa kami, dosa orangtua kami, dan rahmatilah mereka sebagaimana mereka mendidik kami di waktu kecil. Dan ampunilah dosa-dosa semua orang Muslim, laki-laki dan perempuan. Ampunilah dosa-dosa orang beriman, laki-laki dan perempuan. Baik yang hidup ataupun yang mati. Sesungguhnya Engkau Maha Mendengar, Mahadekat dan Maha Mengabulkan semua doa. Wahai Zat Yang Memenuhi Semua Hajat."</p>
-    </div>
-    
-    <div class="doa">
-        <h3>4. Doa Keselamatan</h3>
-        <p class="arab">اللَّهُمَّ إِنَّا نَسْأَلُكَ سَلَامَةً فِي الدِّينِ وَعَافِيَةً فِي الْجَسَدِ وَبَرَكَةً فِي الرِّزْقِ وَتَوْبَةً قَبْلَ الْمَوْتِ وَرَحْمَةً عِنْدَ الْمَوْتِ وَمَغْفِرَةً بَعْدَ الْمَوْتِ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, sesungguhnya kami memohon kepada-Mu keselamatan dalam agama kami, kesehatan pada badan kami, keberkahan dalam rezeki kami. Kami memohon tobat sebelum mati, rahmat ketika mati, dan ampunan setelah mati."</p>
-    </div>
+          <h3>5. Doa Sakaratul Maut</h3>
+          <p class="arab">اللَّهُمَّ هَوِّنْ عَلَيْنَا فِي سَكَرَاتِ الْمَوْتِ وَالنَّجَاةَ مِنَ النَّارِ وَالْعَفْوَ عِنْدَ الْحِسَابِ</p>
+          <p class="latin">Allāhumma hawwīn ‘alaynā fī sakaratil-mawt wa an-najāta minan-nār wa al-‘afwa ‘inda al-ḥisāb.</p>
+          <p><strong>Artinya:</strong> "Ya Allah, mudahkanlah kami ketika menghadapi sakaratul maut, selamatkanlah kami dari api neraka dan anugerahkanlah kemurahan kepada kami ketika perhitungan nanti."</p>
+      </div>
+      
+      <div class="doa">
+          <h3>6. Doa Ilmu yang Bermanfaat</h3>
+          <p class="arab">اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا</p>
+          <p class="latin">Allāhumma innī as’aluka ‘ilman nāfi‘an wa rizqan ṭayyiban wa ‘amalan mutaqabbalan.</p>
+          <p><strong>Artinya:</strong> "Ya Allah, aku mohon kepada-Mu agar diberi ilmu yang bermanfaat, rezeki yang halal, dan amalan yang diterima."</p>
+      </div>
+      
+      <div class="doa">
+          <h3>7. Doa Rahmat Allah</h3>
+          <p class="arab">رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ</p>
+          <p class="latin">Rabbana ẓalamnā anfusana wa in lam taghfir lanā wa tarḥamnā lanakūnanna min al-khāsirīn.</p>
+          <p><strong>Artinya:</strong> "Ya Rabb kami, kami telah menganiaya diri kami sendiri, dan jika Engkau tidak mengampuni kami dan memberi rahmat kepada kami, niscaya pastilah kami termasuk orang-orang yang merugi." (QS. Al-A'raf: 23)</p>
+      </div>
+      
+      <div class="doa">
+          <h3>8. Doa Kebenaran dan Kebatilan</h3>
+          <p class="arab">اللَّهُمَّ أَرِنَا الْحَقَّ حَقًّا وَأَلْهِمْنَا اتِّبَاعَهُ وَأَرِنَا الْبَاطِلَ بَاطِلًا وَأَلْهِمْنَا اجْتِنَابَهُ</p>
+          <p class="latin">Allahumma arinal-ḥaqqa ḥaqqan wa alhimnattibā‘ah, wa arinal-bāṭila bāṭilan wa alhimna ijtinābah</p>
+          <p><strong>Artinya:</strong> "Ya Allah, tunjukkanlah kepada kami kebenaran itu benar dan ilhamkanlah kepada kami untuk mengikutinya. Dan tunjukkanlah kepada kami yang batil itu batil dan ilhamkanlah kepada kami untuk menjauhinya."</p>
+      </div>
+      
+      <div class="doa">
+          <h3>9. Doa Keturunan yang Shalih</h3>
+          <p class="arab">رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا</p>
+          <p class="latin">Rabbana hablana min azwājinā wa dhurriyyātinā qurrata a‘yunin waj‘alnā lil-muttaqīna imāmā</p>
+          <p><strong>Artinya:</strong> "Ya Rabb kami, anugerahkanlah kepada kami istri-istri kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami imam bagi orang-orang yang bertakwa." (QS. Al-Furqan: 74)</p>
+      </div>
+      
+      <div class="doa">
+          <h3>10. Doa Hari Terbaik</h3>
+          <p class="arab">اللَّهُمَّ اجْعَلْ خَيْرَ أَيَّامِي يَوْمَ أَلْقَاكَ</p>
+          <p class="latin">Allahumma aj‘al khayra ayyāmī yawma alqāka</p>
+          <p><strong>Artinya:</strong> "Ya Allah, jadikan hari terbaikku adalah ketika berjumpa dengan-Mu."</p>
+      </div>
+      
+      <div class="doa">
+          <h3>11. Doa Keteguhan Hati</h3>
+          <p class="arab">رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ</p>
+          <p class="latin">Rabbana lā tuzigh qulūbanā ba‘da idh hadaytanā wa hāblanā min ladunka raḥmah, innaka anta al-wahhāb</p>
+          <p><strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi Engkau; karena sesungguhnya Engkau-lah Maha Pemberi (karunia)." (QS. Ali Imran: 8)</p>
+      </div>
+      
+      <div class="doa">
+          <h3>12. Doa Perlindungan dari Bisikan Syaitan</h3>
+          <p class="arab">رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَاتِ الشَّيَاطِينِ وَأَعُوذُ بِكَ رَبِّ أَنْ يَحْضُرُونِ</p>
+          <p class="latin">Rabbi a‘ūdzu bika min hamazātis-syayāṭīn, wa a‘ūdzu bika Rabbi an yaḥḍurūn</p>
+          <p><strong>Artinya:</strong> "Ya Tuhanku aku berlindung kepada Engkau dari bisikan-bisikan setan. Dan aku berlindung (pula) kepada Engkau ya Tuhanku, dari kedatangan mereka kepadaku." (QS. Al-Mukminun [23]: 97-98)</p>
+      </div>
 
-    <div class="doa">
-        <h3>5. Doa Sakaratul Maut</h3>
-        <p class="arab">اللَّهُمَّ هَوِّنْ عَلَيْنَا فِي سَكَرَاتِ الْمَوْتِ وَالنَّجَاةَ مِنَ النَّارِ وَالْعَفْوَ عِنْدَ الْحِسَابِ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, mudahkanlah kami ketika menghadapi sakaratul maut, selamatkanlah kami dari api neraka dan anugerahkanlah kemurahan kepada kami ketika perhitungan nanti."</p>
-    </div>
+      <div class="doa">
+          <h3>13. Doa Penerimaan Ibadah</h3>
+          <p class="arab">اللَّهُمَّ تَقَبَّلْ مِنَّا صَلَاتَنَا وَصِيَامَنَا وَرُكُوعَنَا وَسُجُودَنَا وَقُعُودَنَا وَتَضَرُّعَنَا وَتَخَشُّعَنَا وَتَعَبُّدَنَا وَتَمِّمْ تَقْصِيرَنَا يَا اللَّهُ يَا رَبَّ الْعَالَمِينَ</p>
+          <p class="latin">Allâhumma taqabbal minnâ shalâtanâ wa shiyâmanâ wa rukû’anâ wa sujûdanâ wa qu‘ûdanâ wa tadaru‘anâ wa takhasyu‘anâ wa ta‘abbudanâ wa tammim taqshîranâ yâ Allâhu yâ Rabbal-‘âlamîn</p>
+          <p><strong>Artinya:</strong> "Ya Allah ya Tuhan kami, terimalah shalat kami, puasa kami, rukuk kami, sujud kami, duduk rebah kami, khusyuk kami, pengabdian kami, dan sempurnakanlah kekurangan kami dalam menunaikan kewajiban ya Allah, Tuhan seluruh alam."</p>
+      </div>
     
-    <div class="doa">
-        <h3>6. Doa Ilmu yang Bermanfaat</h3>
-        <p class="arab">اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا</p>
-        <p><strong>Artinya:</strong> "Ya Allah, aku mohon kepada-Mu agar diberi ilmu yang bermanfaat, rezeki yang halal, dan amalan yang diterima."</p>
-    </div>
+      <div class="doa">
+          <h3>14. Doa Berlindung dari Berbagai Keburukan</h3>
+          <p class="arab">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ</p>
+          <p class="latin">Allâhumma innî a‘ûdzu bika minal-hammi wal-ḥazan, wa a‘ûdzu bika minal-‘ajzi wal-kasal, wa a‘ûdzu bika minal-jubni wal-bukhl, wa a‘ûdzu bika min ghalabatid-dayni wa qahrir-rijâl</p>
+          <p><strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari rasa sedih dan duka cita. Aku berlindung kepada-Mu dari kelemahan dan kemalasan. Aku berlindung kepada-Mu dari sifat pengecut dan kikir. Dan aku berlindung kepada-Mu dari lilitan hutang serta penindasan orang."</p>
+          <p class="sumber">(HR. Abu Dawud)</p>
+      </div>
     
-    <div class="doa">
-        <h3>7. Doa Rahmat Allah</h3>
-        <p class="arab">رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ</p>
-        <p><strong>Artinya:</strong> "Ya Rabb kami, kami telah menganiaya diri kami sendiri, dan jika Engkau tidak mengampuni kami dan memberi rahmat kepada kami, niscaya pastilah kami termasuk orang-orang yang merugi." (QS. Al-A'raf: 23)</p>
-    </div>
+      <div class="doa">
+          <h3>15. Doa Agar Tetap Bersyukur dan Beramal Shalih</h3>
+          <p class="arab">رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ</p>
+          <p class="latin">Rabbi auzi‘nî an asykura ni‘mataka allati an‘amta ‘alayya wa ‘alâ wâlidayya wa an a‘mala shâliḥan tarḍâh, wa adkhilnî birahmatika fî ‘ibâdikaṣ-ṣâliḥîn</p>
+          <p><strong>Artinya:</strong> "Ya Tuhanku, berilah aku ilham untuk tetap mensyukuri nikmat-Mu yang telah Engkau anugerahkan kepadaku dan kepada kedua orang tuaku, dan untuk mengerjakan amal shalih yang Engkau ridhai; serta masukkanlah aku dengan rahmat-Mu ke dalam golongan hamba-hamba-Mu yang shalih."</p>
+          <p class="sumber">(QS. An-Naml: 19)</p>
+      </div>
     
-    <div class="doa">
-        <h3>8. Doa Kebenaran dan Kebatilan</h3>
-        <p class="arab">اللَّهُمَّ أَرِنَا الْحَقَّ حَقًّا وَأَلْهِمْنَا اتِّبَاعَهُ وَأَرِنَا الْبَاطِلَ بَاطِلًا وَأَلْهِمْنَا اجْتِنَابَهُ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, tunjukkanlah kepada kami kebenaran itu benar dan ilhamkanlah kepada kami untuk mengikutinya. Dan tunjukkanlah kepada kami yang batil itu batil dan ilhamkanlah kepada kami untuk menjauhinya."</p>
-    </div>
+      <div class="doa">
+          <h3>16. Doa Agar Selalu Ingat dan Bersyukur kepada Allah</h3>
+          <p class="arab">اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ</p>
+          <p class="latin">Allâhumma a‘innî ‘alâ dzikrika wa syukrika wa ḥusni ‘ibâdatika</p>
+          <p><strong>Artinya:</strong> "Ya Allah, tolonglah aku untuk senantiasa mengingat-Mu, bersyukur kepada-Mu, dan beribadah kepada-Mu dengan sebaik-baiknya."</p>
+          <p class="sumber">(HR. Abu Daud dan An-Nasa'i)</p>
+      </div>
     
-    <div class="doa">
-        <h3>9. Doa Keturunan yang Shalih</h3>
-        <p class="arab">رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا</p>
-        <p><strong>Artinya:</strong> "Ya Rabb kami, anugerahkanlah kepada kami istri-istri kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami imam bagi orang-orang yang bertakwa." (QS. Al-Furqan: 74)</p>
-    </div>
+      <div class="doa">
+          <h3>17. Doa Agar Seluruh Keluarga Mendirikan Shalat</h3>
+          <p class="arab">رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ</p>
+          <p class="latin">Rabbi ij‘alnî muqîmaṣ-ṣalâti wa min dzurriyyatî rabbana wa taqabbal du‘â’</p>
+          <p><strong>Artinya:</strong> "Ya Tuhanku, jadikanlah aku orang yang menegakkan shalat dan (juga) sebagian dari keturunanku. Ya Tuhan kami, kabulkanlah doaku."</p>
+          <p class="sumber">(QS. Ibrahim: 40)</p>
+      </div>
     
-    <div class="doa">
-        <h3>10. Doa Hari Terbaik</h3>
-        <p class="arab">اللَّهُمَّ اجْعَلْ خَيْرَ أَيَّامِي يَوْمَ أَلْقَاكَ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, jadikan hari terbaikku adalah ketika berjumpa dengan-Mu."</p>
-    </div>
+      <div class="doa">
+          <h3>18. Doa Memasuki Surga Bersama Orang-Orang Shalih</h3>
+          <p class="arab">وَأَدْخِلْنَا الْجَنَّةَ مَعَ الْأَبْرَارِ، يَا عَزِيزُ يَا غَفَّارُ يَا رَبَّ الْعَالَمِينَ</p>
+          <p class="latin">Wa adkhilnal-jannata ma‘al-abrâr, yâ ‘azîzu yâ ghaffâr, yâ Rabbal-‘âlamîn</p>
+          <p><strong>Artinya:</strong> "Dan masukkanlah kami ke dalam surga bersama orang-orang yang berbakti (shalih), Wahai Yang Maha Perkasa, Maha Pengampun, Tuhan semesta alam."</p>
+          <p class="sumber">(Doa dari berbagai riwayat shahih)</p>
+      </div>
     
-    <div class="doa">
-        <h3>11. Doa Keteguhan Hati</h3>
-        <p class="arab">رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ</p>
-        <p><strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi Engkau; karena sesungguhnya Engkau-lah Maha Pemberi (karunia)." (QS. Ali Imran: 8)</p>
-    </div>
+      <div class="doa">
+          <h3>19. Doa Tolak Bala</h3>
+          <p class="arab">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ جَهْدِ الْبَلَاءِ، وَدَرْكِ الشَّقَاءِ، وَسُوءِ الْقَضَاءِ، وَشَمَاتَةِ الْأَعْدَاءِ</p>
+          <p class="latin">Allâhumma innî a‘ûdzu bika min jahdil-balâ’, wa darkis-syaqâ’, wa sû’il-qaḍâ’, wa syamâtatil-a‘dâ’</p>
+          <p><strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari: bencana yang berat, kecelakaan yang menimpa, ketetapan takdir yang buruk, dan kegembiraan musuh atas musibahku."</p>
+          <p class="sumber">(HR. Bukhari No. 6347, Muslim No. 2707, dan An-Nasa'i)</p>
+      </div>
     
-    <div class="doa">
-        <h3>12. Doa Perlindungan dari Bisikan Syaitan</h3>
-        <p class="arab">رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَاتِ الشَّيَاطِينِ وَأَعُوذُ بِكَ رَبِّ أَنْ يَحْضُرُونِ</p>
-        <p><strong>Artinya:</strong> "Ya Tuhanku aku berlindung kepada Engkau dari bisikan-bisikan setan. Dan aku berlindung (pula) kepada Engkau ya Tuhanku, dari kedatangan mereka kepadaku." (QS. Al-Mukminun [23]: 97-98)</p>
-    </div>
+      <div class="doa">
+          <h3>20. Doa Perlindungan dari Akhlak dan Perbuatan Buruk</h3>
+          <p class="arab">اللَّهُمَّ جَنِّبْنِي مُنْكَرَاتِ الْأَخْلَاقِ، وَالْأَعْمَالِ، وَالْأَهْوَاءِ، وَالْأَدْوَاءِ</p>
+          <p class="latin">Allâhumma jannibnî munkarâtil-akhlâq, wal-a‘mâl, wal-ahwâ’, wal-adwâ’</p>
+          <p><strong>Artinya:</strong> "Ya Allah, jauhkanlah aku dari: akhlak-akhlak yang mungkar, perbuatan-perbuatan yang buruk, hawa nafsu yang tercela, dan penyakit-penyakit yang membahayakan."</p>
+          <p class="sumber">(HR. Ath-Thabarani, dishahihkan oleh Al-Hakim, Syaikh Al-Albani, dan Syaikh Muqbil bin Hadi Al-Wadi'i)</p>
+      </div>
+    
+      <div class="doa">
+          <h3>21. Al-Baqarah: 286</h3>
+          <p class="arab">رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ</p>
+          <p class="latin">Rabbana lâ tu’âkhidznâ in nasînâ aw akhṭa’nâ, rabbana wa lâ taḥmil ‘alainâ ishran kamâ ḥamaltahû ‘alallażîna min qablina, rabbana wa lâ tuḥammilnâ mâ lâ ṭâqata lanâ bih, wa‘fu ‘annâ, waghfir lanâ, warḥamnâ, anta maulânâ faanṣurnâ ‘alal-qaumil-kâfirîn</p>
+          <p><strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau hukum kami jika kami lupa atau kami tersalah. Ya Tuhan kami, janganlah Engkau bebankan kepada kami beban yang berat sebagaimana Engkau bebankan kepada orang-orang sebelum kami. Ya Tuhan kami, janganlah Engkau pikulkan kepada kami apa yang tak sanggup kami memikulnya. Beri maaflah kami; ampunilah kami; dan rahmatilah kami. Engkaulah Penolong kami, maka tolonglah kami terhadap kaum yang kafir."</p>
+      </div>
 
-    <div class="doa">
-        <h3>13. Doa Penerimaan Ibadah</h3>
-        <p class="arab">اللَّهُمَّ تَقَبَّلْ مِنَّا صَلَاتَنَا وَصِيَامَنَا وَرُكُوعَنَا وَسُجُودَنَا وَقُعُودَنَا وَتَضَرُّعَنَا وَتَخَشُّعَنَا وَتَعَبُّدَنَا وَتَمِّمْ تَقْصِيرَنَا يَا اللَّهُ يَا رَبَّ الْعَالَمِينَ</p>
-        <p><strong>Artinya:</strong> "Ya Allah ya Tuhan kami, terimalah shalat kami, puasa kami, rukuk kami, sujud kami, duduk rebah kami, khusyuk kami, pengabdian kami, dan sempurnakanlah kekurangan kami dalam menunaikan kewajiban ya Allah, Tuhan seluruh alam."</p>
-    </div>
-  
-    <div class="doa">
-        <h3>14. Doa Berlindung dari Berbagai Keburukan</h3>
-        <p class="arab">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari rasa sedih dan duka cita. Aku berlindung kepada-Mu dari kelemahan dan kemalasan. Aku berlindung kepada-Mu dari sifat pengecut dan kikir. Dan aku berlindung kepada-Mu dari lilitan hutang serta penindasan orang."</p>
-        <p class="sumber">(HR. Abu Dawud)</p>
-    </div>
-  
-    <div class="doa">
-        <h3>15. Doa Agar Tetap Bersyukur dan Beramal Shalih</h3>
-        <p class="arab">رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ</p>
-        <p><strong>Artinya:</strong> "Ya Tuhanku, berilah aku ilham untuk tetap mensyukuri nikmat-Mu yang telah Engkau anugerahkan kepadaku dan kepada kedua orang tuaku, dan untuk mengerjakan amal shalih yang Engkau ridhai; serta masukkanlah aku dengan rahmat-Mu ke dalam golongan hamba-hamba-Mu yang shalih."</p>
-        <p class="sumber">(QS. An-Naml: 19)</p>
-    </div>
-  
-    <div class="doa">
-        <h3>16. Doa Agar Selalu Ingat dan Bersyukur kepada Allah</h3>
-        <p class="arab">اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, tolonglah aku untuk senantiasa mengingat-Mu, bersyukur kepada-Mu, dan beribadah kepada-Mu dengan sebaik-baiknya."</p>
-        <p class="sumber">(HR. Abu Daud dan An-Nasa'i)</p>
-    </div>
-  
-    <div class="doa">
-        <h3>17. Doa Agar Seluruh Keluarga Mendirikan Shalat</h3>
-        <p class="arab">رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ</p>
-        <p><strong>Artinya:</strong> "Ya Tuhanku, jadikanlah aku orang yang menegakkan shalat dan (juga) sebagian dari keturunanku. Ya Tuhan kami, kabulkanlah doaku."</p>
-        <p class="sumber">(QS. Ibrahim: 40)</p>
-    </div>
-  
-    <div class="doa">
-        <h3>18. Doa Memasuki Surga Bersama Orang-Orang Shalih</h3>
-        <p class="arab">وَأَدْخِلْنَا الْجَنَّةَ مَعَ الْأَبْرَارِ، يَا عَزِيزُ يَا غَفَّارُ يَا رَبَّ الْعَالَمِينَ</p>
-        <p><strong>Artinya:</strong> "Dan masukkanlah kami ke dalam surga bersama orang-orang yang berbakti (shalih), Wahai Yang Maha Perkasa, Maha Pengampun, Tuhan semesta alam."</p>
-        <p class="sumber">(Doa dari berbagai riwayat shahih)</p>
-    </div>
-  
-    <div class="doa">
-        <h3>19. Doa Tolak Bala</h3>
-        <p class="arab">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ جَهْدِ الْبَلَاءِ، وَدَرْكِ الشَّقَاءِ، وَسُوءِ الْقَضَاءِ، وَشَمَاتَةِ الْأَعْدَاءِ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari: bencana yang berat, kecelakaan yang menimpa, ketetapan takdir yang buruk, dan kegembiraan musuh atas musibahku."</p>
-        <p class="sumber">(HR. Bukhari No. 6347, Muslim No. 2707, dan An-Nasa'i)</p>
-    </div>
-  
-    <div class="doa">
-        <h3>20. Doa Perlindungan dari Akhlak dan Perbuatan Buruk</h3>
-        <p class="arab">اللَّهُمَّ جَنِّبْنِي مُنْكَرَاتِ الْأَخْلَاقِ، وَالْأَعْمَالِ، وَالْأَهْوَاءِ، وَالْأَدْوَاءِ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, jauhkanlah aku dari: akhlak-akhlak yang mungkar, perbuatan-perbuatan yang buruk, hawa nafsu yang tercela, dan penyakit-penyakit yang membahayakan."</p>
-        <p class="sumber">(HR. Ath-Thabarani, dishahihkan oleh Al-Hakim, Syaikh Al-Albani, dan Syaikh Muqbil bin Hadi Al-Wadi'i)</p>
-    </div>
-  
-  <div class="doa">
-      <h3>21. Al-Baqarah: 286</h3>
-      <p class="arab">رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ</p>
-      <p><strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau hukum kami jika kami lupa atau kami tersalah. Ya Tuhan kami, janganlah Engkau bebankan kepada kami beban yang berat sebagaimana Engkau bebankan kepada orang-orang sebelum kami. Ya Tuhan kami, janganlah Engkau pikulkan kepada kami apa yang tak sanggup kami memikulnya. Beri maaflah kami; ampunilah kami; dan rahmatilah kami. Engkaulah Penolong kami, maka tolonglah kami terhadap kaum yang kafir."</p>
-  </div>
-
-    <div class="doa">
-        <h3>22. Doa Kebaikan Dunia Akhirat</h3>
-        <p class="arab">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</p>
-        <p><strong>Artinya:</strong> "Ya Rabb kami, berilah kami kebaikan di dunia dan kebaikan di akhirat dan peliharalah kami dari siksa neraka." (Al-Baqarah: 201)</p>
-    </div>
-    
-    <div class="doa">
-        <h3>23. Doa Penutup</h3>
-        <p class="arab">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ وَسَلَامٌ عَلَى الْمُرْسَلِينَ وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p>
-        <p><strong>Artinya:</strong> "Ya Allah, berilah keselamatan kepada Muhammad, keluarga, beserta sahabatnya. Mahasuci Rabbmu, Rabb kemuliaan dari apa-apa yang mereka sifatkan. Keselamatan semoga tercurah kepada para rasul dan segala puji bagi Allah. Tuhan semesta alam."</p>
-    </div>
+      <div class="doa">
+          <h3>22. Doa Kebaikan Dunia Akhirat</h3>
+          <p class="arab">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</p>
+          <p class="latin">Rabbana âtinâ fiddunyâ ḥasanah wa fil-âkhirati ḥasanah wa qinâ ‘adzâban-nâr</p>
+          <p><strong>Artinya:</strong> "Ya Rabb kami, berilah kami kebaikan di dunia dan kebaikan di akhirat dan peliharalah kami dari siksa neraka." (Al-Baqarah: 201)</p>
+      </div>
+      
+      <div class="doa">
+          <h3>23. Doa Penutup</h3>
+          <p class="arab">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ وَسَلَامٌ عَلَى الْمُرْسَلِينَ وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p>
+          <p class="latin">Allâhumma ṣalli ‘alâ Muḥammad wa ‘alâ âlihî wa ṣaḥbihî wa sallim. Subḥâna rabbika rabbil-‘izzati ‘ammâ yaṣifûn. Wa salâmun ‘alâ al-mursalîn. Wal-ḥamdu lillâhi rabbil-‘âlamîn.</p>
+          <p><strong>Artinya:</strong> "Ya Allah, berilah keselamatan kepada Muhammad, keluarga, beserta sahabatnya. Mahasuci Rabbmu, Rabb kemuliaan dari apa-apa yang mereka sifatkan. Keselamatan semoga tercurah kepada para rasul dan segala puji bagi Allah. Tuhan semesta alam."</p>
+      </div>
     </section>
 
+    <!-- Section Dalil Populer -->
     <section id="dalil" class="content-section hidden">
       <h2>Dalil Populer</h2>
+      <div class="dalil">
+          <h3>1. Al-Baqarah: 275</h3>
+          <p class="arab">وَأَحَلَّ ٱللَّهُ ٱلْبَيْعَ وَحَرَّمَ ٱلرِّبَوٰا۟</p>
+          <p class="latin">Wa aḥalla-llāhu al-bay‘a wa ḥarrama ar-ribā</p>
+          <p><strong>Artinya:</strong> "Padahal Allah telah menghalalkan jual beli dan mengharamkan riba."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>2. Ali-Imran: 159</h3>
+          <p class="arab">فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى اللَّهِ ۚ إِنَّ اللَّهَ يُحِبُّ الْمُتَوَكِّلِينَ</p>
+          <p class="latin">Fa idzā ‘azamta fatawakkal ‘alallāh, innallāha yuḥibbul-mutawakkilīn</p>
+          <p><strong>Artinya:</strong> "Kemudian apabila kamu telah membulatkan tekad, maka bertawakkallah kepada Allah. Sesungguhnya Allah menyukai orang-orang yang bertawakkal kepada-Nya."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>3. Al-Hujurat: 13</h3>
+          <p class="arab">إِنَّ أَكْرَمَكُمْ عِنْدَ اللَّهِ أَتْقَاكُمْ</p>
+          <p class="latin">Inna akramakum ‘indallāhi atqākum</p>
+          <p><strong>Artinya:</strong> "Sesungguhnya orang yang paling mulia di antara kamu di sisi Allah ialah orang yang paling bertaqwa di antara kamu."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>4. Al-Ankabut: 57</h3>
+          <p class="arab">كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ ۖ ثُمَّ إِلَيْنَا تُرْجَعُونَ</p>
+          <p class="latin">Kullu nafsin dzāiqatu al-maut, tsumma ilainā turja‘ūn.</p>
+          <p><strong>Artinya:</strong> "Tiap-tiap yang berjiwa akan merasakan mati. Kemudian hanyalah kepada Kami kamu dikembalikan."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>5. At-Tahrim: 6</h3>
+          <p class="arab">يَا أَيُّهَا الَّذِينَ آمَنُوا قُوا أَنْفُسَكُمْ وَأَهْلِيكُمْ نَارًا</p>
+          <p class="latin">Yā ayyuhalladzīna āmanū qū anfusakum wa ahlīkum nārā</p>
+          <p><strong>Artinya:</strong> "Hai orang-orang yang beriman, peliharalah dirimu dan keluargamu dari api neraka."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>6. At-Talaq: 3</h3>
+          <p class="latin">Wa man yatawakkal ‘alallāhi fahuwa ḥasbuh</p>
+          <p class="arab">وَمَن يَتَوَكَّلْ عَلَى ٱللَّهِ فَهُوَ حَسْبُهُۥٓ</p>
+          <p><strong>Artinya:</strong> "Dan barangsiapa yang bertawakkal kepada Allah niscaya Allah akan mencukupkan (keperluan)nya."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>7. Al-Baqarah: 256</h3>
+          <p class="arab">لَا إِكْرَاهَ فِي الدِّينِ</p>
+          <p class="latin">Lā ikrāha fid-dīn</p>
+          <p><strong>Artinya:</strong> "Tidak ada paksaan untuk (memasuki) agama (Islam)."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>8. Adz-Zariyat: 56</h3>
+          <p class="arab">وَمَا خَلَقْتُ الْجِنَّ وَالْإِنْسَ إِلَّا لِيَعْبُدُونِ</p>
+          <p class="latin">Wa mā khalaqtul-jinna wal-insa illā liya‘budūn.</p>
+          <p><strong>Artinya:</strong> "Dan aku tidak menciptakan jin dan manusia melainkan supaya mereka mengabdi kepada-Ku."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>9. Al-Isra: 32</h3>
+          <p class="arab">وَلَا تَقْرَبُوا الزِّنَا ۖ إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا</p>
+          <p class="latin">Wa lā taqrabū az-zinā, innahu kāna fāḥisyatan wa sā’a sabīlā</p>
+          <p><strong>Artinya:</strong> "Dan janganlah kamu mendekati zina; sesungguhnya zina itu adalah suatu perbuatan yang keji dan suatu jalan yang buruk."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>10. Al-Baqarah: 43</h3>
+          <p class="arab">وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ</p>
+          <p class="latin">Wa aqīmū aṣ-ṣalāta wa ātū az-zakāta wa rka‘ū ma‘a ar-rāki‘īn</p>
+          <p><strong>Artinya:</strong> "Dan dirikanlah shalat, tunaikanlah zakat dan ruku'lah beserta orang-orang yang ruku'."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>11. Ibrahim: 7</h3>
+          <p class="arab">لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِن كَفَرْتُمْ إِنَّ عَذَابِي لَشَدِيدٌ</p>
+          <p class="latin">La-in syakartum la-aziidannakum wa la-in kafartum inna 'adzaabii lasyadiid</p>
+          <p><strong>Artinya:</strong> "Sesungguhnya jika kamu bersyukur, pasti Kami akan menambah (nikmat) kepadamu, dan jika kamu mengingkari (nikmat-Ku), maka sesungguhnya azab-Ku sangat pedih".</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>12. Al-Hijr: 9</h3>
+          <p class="arab">إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ</p>
+          <p class="latin">Innā naḥnu nazzalnā al-dzikra wa innā lahu laḥāfiẓūn</p>
+          <p><strong>Artinya:</strong> "Sesungguhnya Kami-lah yang menurunkan Al Quran, dan sesungguhnya Kami benar-benar memeliharanya."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>13. Al-Ankabut: 45</h3>
+          <p class="arab">إِنَّ الصَّلَاةَ تَنْهَى عَنِ الْفَحْشَاءِ وَالْمُنْكَرِ</p>
+          <p class="latin">Inna aṣ-ṣalāta tanhā ‘anil-faḥsyā’i wal-munkar</p>
+          <p><strong>Artinya:</strong> "Sesungguhnya shalat itu mencegah dari (perbuatan-perbuatan) keji dan mungkar."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>14. An-Nur: 31</h3>
+          <p class="arab">وَلْيَضْرِبْنَ بِخُمُرِهِنَّ عَلَى جُيُوبِهِنَّ</p>
+          <p class="latin">Walyaḍribna bikhumurihinna ‘alā juyūbihinna</p>
+          <p><strong>Artinya:</strong> "Dan hendaklah mereka menutupkan kain kudung ke dadanya."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>15. Al-Mu'min: 60</h3>
+          <p class="arab">ٱدْعُونِىٓ أَسْتَجِبْ لَكُمْ</p>
+          <p class="latin">Ud‘ūnī astajib lakum</p>
+          <p><strong>Artinya:</strong> "Berdoalah kepada-Ku, niscaya akan Kuperkenankan bagimu."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>16. Ali-Imran: 19</h3>
+          <p class="arab">إِنَّ الدِّينَ عِنْدَ اللَّهِ الْإِسْلَامُ</p>
+          <p class="latin">Innad-dīna ‘indallāhi al-Islām</p>
+          <p><strong>Artinya:</strong> "Sesungguhnya agama (yang diridhai) di sisi Allah hanyalah Islam."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>17. Ar-Ra'd: 11</h3>
+          <p class="arab">إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّى يُغَيِّرُوا مَا بِأَنْفُسِهِمْ</p>
+          <p class="latin">Inna Allāha lā yughayyiru mā biqawmin ḥattā yughayyirū mā bi’anfusihim</p>
+          <p><strong>Artinya:</strong> "Sesungguhnya Allah tidak merubah keadaan sesuatu kaum sehingga mereka merobah keadaan yang ada pada diri mereka sendiri."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>18. Ali-Imran: 97</h3>
+          <p class="arab">وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا</p>
+          <p class="latin">Wa lillāhi ‘alā an-nāsi ḥijjul-bayti manis-taṭā‘a ilaihi sabīlā</p>
+          <p><strong>Artinya:</strong> "Mengerjakan haji adalah kewajiban manusia terhadap Allah, yaitu (bagi) orang yang sanggup mengadakan perjalanan ke Baitullah."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>19. Al-Isra: 33</h3>
+          <p class="arab">وَلَا تَقْتُلُوا النَّفْسَ الَّتِي حَرَّمَ اللَّهُ إِلَّا بِالْحَقِّ</p>
+          <p class="latin">Wa lā taqtulū an-nafsallatī ḥarramallāhu illā bil-ḥaqq</p>
+          <p><strong>Artinya:</strong> "Dan janganlah kamu membunuh jiwa yang diharamkan Allah (membunuhnya), melainkan dengan suatu (alasan) yang benar."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>20. An-Nisa: 59</h3>
+          <p class="arab">يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنْكُمْ</p>
+          <p class="latin">Yā ayyuhalladzīna āmanū aṭī‘ullāha wa aṭī‘ur-rasūla wa ulil-amri minkum</p>
+          <p><strong>Artinya:</strong> "Hai orang-orang yang beriman, taatilah Allah dan taatilah Rasul (Nya), dan ulil amri di antara kamu."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>21. At-Taubah: 103</h3>
+          <p class="arab">خُذْ مِنْ أَمْوَالِهِمْ صَدَقَةً تُطَهِّرُهُمْ وَتُزَكِّيهِم بِهَا</p>
+          <p class="latin">Khudz min amwâlihim ṣadaqatan tuṭahhiruhum wa tuzakkîhim bihâ</p>
+          <p><strong>Artinya:</strong> "Ambillah zakat dari sebagian harta mereka, dengan zakat itu kamu membersihkan dan mensucikan mereka."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>22. An-Nisa: 48</h3>
+          <p class="arab">إِنَّ اللَّهَ لَا يَغْفِرُ أَن يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذَٰلِكَ لِمَن يَشَاءُ</p>
+          <p class="latin">Inna Allāha lā yaghfiru an yusyraka bihi wa yaghfiru mā dūna dzālika liman yasyā’u</p>
+          <p><strong>Artinya:</strong> "Sesungguhnya Allah tidak akan mengampuni dosa syirik, dan Dia mengampuni segala dosa yang selain dari (syirik) itu, bagi siapa yang dikehendaki-Nya."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>23. Al-Qasas: 77</h3>
+          <p class="arab">وَابْتَغِ فِيمَا آتَاكَ اللَّهُ الدَّارَ الْآخِرَةَ ۖ وَلَا تَنسَ نَصِيبَكَ مِنَ الدُّنْيَا</p>
+          <p class="latin">Wa abtaghi fīmā ātāka Allāhu ad-dāra al-ākhirata wa lā tansa naṣībaka mina ad-dunyā</p>
+          <p><strong>Artinya:</strong> "Dan carilah pada apa yang telah dianugerahkan Allah kepadamu (kebahagiaan) negeri akhirat, dan janganlah kamu melupakan bahagianmu dari (kenikmatan) duniawi."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>24. Al-Anbiya: 107</h3>
+          <p class="arab">وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ</p>
+          <p class="latin">Wa mā arsalnāka illā raḥmatan lil-‘ālamīn</p>
+          <p><strong>Artinya:</strong> "Dan tiadalah Kami mengutus kamu, melainkan untuk (menjadi) rahmat bagi semesta alam."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>25. Al-A'raf: 31</h3>
+          <p class="arab">يَا بَنِي آدَمَ خُذُوا زِينَتَكُمْ عِندَ كُلِّ مَسْجِدٍ</p>
+          <p class="latin">Yā banī Ādama khudhū zīnatakum ‘inda kulli masjidin</p>
+          <p><strong>Artinya:</strong> "Hai anak Adam, pakailah pakaianmu yang indah di setiap (memasuki) masjid."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>26. Al-Maidah: 2</h3>
+          <p class="arab">وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ ۖ وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ</p>
+          <p class="latin">Wa ta‘āwanū ‘alal-birri wat-taqwā wa lā ta‘āwanū ‘alal-ithmi wal-‘udwān</p>
+          <p><strong>Artinya:</strong> "Dan tolong-menolonglah kamu dalam (mengerjakan) kebajikan dan takwa, dan jangan tolong-menolong dalam berbuat dosa dan pelanggaran."</p>
+      </div>
 
       <div class="dalil">
-        <h3>1. Al-Baqarah: 275</h3>
-        <p class="arab">وَأَحَلَّ ٱللَّهُ ٱلْبَيْعَ وَحَرَّمَ ٱلرِّبَوٰا۟</p>
-        <p><strong>Artinya:</strong> Padahal Allah telah menghalalkan jual beli dan mengharamkan riba.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>2. Ali-Imran: 159</h3>
-        <p class="arab">فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى اللَّهِ ۚ إِنَّ اللَّهَ يُحِبُّ الْمُتَوَكِّلِينَ</p>
-        <p><strong>Artinya:</strong> Kemudian apabila kamu telah membulatkan tekad, maka bertawakkallah kepada Allah. Sesungguhnya Allah menyukai orang-orang yang bertawakkal kepada-Nya.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>3. Al-Hujurat: 13</h3>
-        <p class="arab">إِنَّ أَكْرَمَكُمْ عِنْدَ اللَّهِ أَتْقَاكُمْ</p>
-        <p><strong>Artinya:</strong> Sesungguhnya orang yang paling mulia di antara kamu di sisi Allah ialah orang yang paling bertaqwa di antara kamu.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>4. Al-Ankabut: 57</h3>
-        <p class="arab">كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ ۖ ثُمَّ إِلَيْنَا تُرْجَعُونَ</p>
-        <p><strong>Artinya:</strong> Tiap-tiap yang berjiwa akan merasakan mati. Kemudian hanyalah kepada Kami kamu dikembalikan.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>5. At-Tahrim: 6</h3>
-        <p class="arab">يَا أَيُّهَا الَّذِينَ آمَنُوا قُوا أَنْفُسَكُمْ وَأَهْلِيكُمْ نَارًا</p>
-        <p><strong>Artinya:</strong> Hai orang-orang yang beriman, peliharalah dirimu dan keluargamu dari api neraka.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>6. At-Talaq: 3</h3>
-        <p class="arab">وَمَن يَتَوَكَّلْ عَلَى ٱللَّهِ فَهُوَ حَسْبُهُۥٓ</p>
-        <p><strong>Artinya:</strong> Dan barangsiapa yang bertawakkal kepada Allah niscaya Allah akan mencukupkan (keperluan)nya.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>7. Al-Baqarah: 256</h3>
-        <p class="arab">لَا إِكْرَاهَ فِي الدِّينِ</p>
-        <p><strong>Artinya:</strong> Tidak ada paksaan untuk (memasuki) agama (Islam).</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>8. Adz-Zariyat: 56</h3>
-        <p class="arab">وَمَا خَلَقْتُ الْجِنَّ وَالْإِنْسَ إِلَّا لِيَعْبُدُونِ</p>
-        <p><strong>Artinya:</strong> Dan aku tidak menciptakan jin dan manusia melainkan supaya mereka mengabdi kepada-Ku.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>9. Al-Isra: 32</h3>
-        <p class="arab">وَلَا تَقْرَبُوا الزِّنَا ۖ إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا</p>
-        <p><strong>Artinya:</strong> Dan janganlah kamu mendekati zina; sesungguhnya zina itu adalah suatu perbuatan yang keji dan suatu jalan yang buruk.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>10. Al-Baqarah: 43</h3>
-        <p class="arab">وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ</p>
-        <p><strong>Artinya:</strong> Dan dirikanlah shalat, tunaikanlah zakat dan ruku'lah beserta orang-orang yang ruku'.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>11. Ibrahim: 7</h3>
-        <p class="arab">لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِن كَفَرْتُمْ إِنَّ عَذَابِي لَشَدِيدٌ</p>
-        <p><strong>Artinya:</strong> "Sesungguhnya jika kamu bersyukur, pasti Kami akan menambah (nikmat) kepadamu, dan jika kamu mengingkari (nikmat-Ku), maka sesungguhnya azab-Ku sangat pedih".</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>12. Al-Hijr: 9</h3>
-        <p class="arab">إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ</p>
-        <p><strong>Artinya:</strong> Sesungguhnya Kami-lah yang menurunkan Al Quran, dan sesungguhnya Kami benar-benar memeliharanya.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>13. Al-Ankabut: 45</h3>
-        <p class="arab">إِنَّ الصَّلَاةَ تَنْهَى عَنِ الْفَحْشَاءِ وَالْمُنْكَرِ</p>
-        <p><strong>Artinya:</strong> Sesungguhnya shalat itu mencegah dari (perbuatan-perbuatan) keji dan mungkar.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>14. An-Nur: 31</h3>
-        <p class="arab">وَلْيَضْرِبْنَ بِخُمُرِهِنَّ عَلَى جُيُوبِهِنَّ</p>
-        <p><strong>Artinya:</strong> Dan hendaklah mereka menutupkan kain kudung ke dadanya.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>15. Al-Mu'min: 60</h3>
-        <p class="arab">ٱدْعُونِىٓ أَسْتَجِبْ لَكُمْ</p>
-        <p><strong>Artinya:</strong> Berdoalah kepada-Ku, niscaya akan Kuperkenankan bagimu.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>16. Ali-Imran: 19</h3>
-        <p class="arab">إِنَّ الدِّينَ عِنْدَ اللَّهِ الْإِسْلَامُ</p>
-        <p><strong>Artinya:</strong> Sesungguhnya agama (yang diridhai) di sisi Allah hanyalah Islam.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>17. Ar-Ra'd: 11</h3>
-        <p class="arab">إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّى يُغَيِّرُوا مَا بِأَنْفُسِهِمْ</p>
-        <p><strong>Artinya:</strong> Sesungguhnya Allah tidak merubah keadaan sesuatu kaum sehingga mereka merobah keadaan yang ada pada diri mereka sendiri.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>18. Ali-Imran: 97</h3>
-        <p class="arab">وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا</p>
-        <p><strong>Artinya:</strong> Mengerjakan haji adalah kewajiban manusia terhadap Allah, yaitu (bagi) orang yang sanggup mengadakan perjalanan ke Baitullah.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>19. Al-Isra: 33</h3>
-        <p class="arab">وَلَا تَقْتُلُوا النَّفْسَ الَّتِي حَرَّمَ اللَّهُ إِلَّا بِالْحَقِّ</p>
-        <p><strong>Artinya:</strong> Dan janganlah kamu membunuh jiwa yang diharamkan Allah (membunuhnya), melainkan dengan suatu (alasan) yang benar.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>20. An-Nisa: 59</h3>
-        <p class="arab">يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنْكُمْ</p>
-        <p><strong>Artinya:</strong> Hai orang-orang yang beriman, taatilah Allah dan taatilah Rasul (Nya), dan ulil amri di antara kamu.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>21. At-Taubah: 103</h3>
-        <p class="arab">خُذْ مِنْ أَمْوَالِهِمْ صَدَقَةً تُطَهِّرُهُمْ وَتُزَكِّيهِم بِهَا</p>
-        <p><strong>Artinya:</strong> Ambillah zakat dari sebagian harta mereka, dengan zakat itu kamu membersihkan dan mensucikan mereka.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>22. An-Nisa: 48</h3>
-        <p class="arab">إِنَّ اللَّهَ لَا يَغْفِرُ أَن يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذَٰلِكَ لِمَن يَشَاءُ</p>
-        <p><strong>Artinya:</strong> Sesungguhnya Allah tidak akan mengampuni dosa syirik, dan Dia mengampuni segala dosa yang selain dari (syirik) itu, bagi siapa yang dikehendaki-Nya.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>23. Al-Qasas: 77</h3>
-        <p class="arab">وَابْتَغِ فِيمَا آتَاكَ اللَّهُ الدَّارَ الْآخِرَةَ ۖ وَلَا تَنسَ نَصِيبَكَ مِنَ الدُّنْيَا</p>
-        <p><strong>Artinya:</strong> Dan carilah pada apa yang telah dianugerahkan Allah kepadamu (kebahagiaan) negeri akhirat, dan janganlah kamu melupakan bahagianmu dari (kenikmatan) duniawi.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>24. Al-Anbiya: 107</h3>
-        <p class="arab">وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ</p>
-        <p><strong>Artinya:</strong> Dan tiadalah Kami mengutus kamu, melainkan untuk (menjadi) rahmat bagi semesta alam.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>25. Al-A'raf: 31</h3>
-        <p class="arab">يَا بَنِي آدَمَ خُذُوا زِينَتَكُمْ عِندَ كُلِّ مَسْجِدٍ</p>
-        <p><strong>Artinya:</strong> Hai anak Adam, pakailah pakaianmu yang indah di setiap (memasuki) masjid.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>26. Al-Maidah: 2</h3>
-        <p class="arab">وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ ۖ وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ</p>
-        <p><strong>Artinya:</strong> Dan tolong-menolonglah kamu dalam (mengerjakan) kebajikan dan takwa, dan jangan tolong-menolong dalam berbuat dosa dan pelanggaran.</p>
-    </div>
-
-    <div class="dalil">
-        <h3>27. Ar-Rum: 21</h3>
-        <p class="arab">وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً</p>
-        <p><strong>Artinya:</strong> Dan dijadikan-Nya diantaramu rasa kasih dan sayang.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>28. Al-Hujurat: 10</h3>
-        <p class="arab">إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ</p>
-        <p><strong>Artinya:</strong> Sesungguhnya orang-orang mukmin itu bersaudara.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>29. Al-Baqarah: 120</h3>
-        <p class="arab">وَلَنْ تَرْضَى عَنْكَ الْيَهُودُ وَلَا النَّصَارَى حَتَّى تَتَّبِعَ مِلَّتَهُمْ</p>
-        <p><strong>Artinya:</strong> Orang-orang Yahudi dan Nasrani tidak akan senang kepada kamu hingga kamu mengikuti agama mereka.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>30. Al-Mujadilah: 11</h3>
-        <p class="arab">يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنْكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</p>
-        <p><strong>Artinya:</strong> Niscaya Allah akan meninggikan orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa derajat. Dan Allah Maha Mengetahui apa yang kamu kerjakan.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>31. Al-Baqarah: 191</h3>
-        <p class="arab">... وَالْفِتْنَةُ أَشَدُّ مِنَ الْقَتْلِ</p>
-        <p><strong>Artinya:</strong> ...dan fitnah itu lebih besar bahayanya dari pembunuhan.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>32. Ali-Imran: 92</h3>
-        <p class="arab">لَنْ تَنَالُوا الْبِرَّ حَتّٰى تُنْفِقُوْا مِمَّا تُحِبُّوْنَۗ وَمَا تُنْفِقُوْا مِنْ شَيْءٍ فَاِنَّ اللّٰهَ بِهٖ عَلِيْمٌ</p>
-        <p><strong>Artinya:</strong> Kamu sekali-kali tidak sampai kepada kebajikan (yang sempurna), sebelum kamu menafkahkan sebahagian harta yang kamu cintai. Dan apa saja yang kamu nafkahkan maka sesungguhnya Allah mengetahuinya.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>33. Al-Baqarah: 3</h3>
-        <p class="arab">الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنْفِقُونَ</p>
-        <p><strong>Artinya:</strong> (Yaitu) mereka yang beriman kepada yang ghaib, yang mendirikan shalat, dan menafkahkan sebahagian rezeki yang Kami anugerahkan kepada mereka.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>34. Ali-Imran: 190-192</h3>
-        <p class="arab">إِنَّ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ لَآيَاتٍ لِأُولِي الْأَلْبَابِ ﴿١٩٠﴾ الَّذِينَ يَذْكُرُونَ اللَّهَ قِيَامًا وَقُعُودًا وَعَلَى جُنُوبِهِمْ وَيَتَفَكَّرُونَ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ رَبَّنَا مَا خَلَقْتَ هَذَا بَاطِلًا سُبْحَانَكَ فَقِنَا عَذَابَ النَّارِ ﴿١٩١﴾ رَبَّنَا إِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ أَخْزَيْتَهُ وَمَا لِلظَّالِمِينَ مِنْ أَنْصَارٍ ﴿١٩٢﴾</p>
-        <p><strong>Artinya:</strong></p>
-        <p>190. Sesungguhnya dalam penciptaan langit dan bumi, dan silih bergantinya malam dan siang terdapat tanda-tanda bagi orang-orang yang berakal.</p>
-        <p>191. (Yaitu) orang-orang yang mengingat Allah sambil berdiri atau duduk atau dalam keadaan berbaring dan mereka memikirkan tentang penciptaan langit dan bumi (seraya berkata): "Ya Tuhan kami, Tiadalah Engkau menciptakan ini dengan sia-sia, Maha suci Engkau, maka peliharalah kami dari siksa neraka.</p>
-        <p>192. Ya Tuhan kami, sesungguhnya barangsiapa yang Engkau masukkan ke dalam neraka, maka sungguh telah Engkau hinakan ia, dan tidak ada bagi orang-orang yang zalim seorang penolongpun.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>35. Luqman: 12-14</h3>
-        <p class="arab">وَلَقَدْ آتَيْنَا لُقْمَانَ الْحِكْمَةَ أَنِ اشْكُرْ لِلَّهِ وَمَنْ يَشْكُرْ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ وَمَنْ كَفَرَ فَإِنَّ اللَّهَ غَنِيٌّ حَمِيدٌ ﴿١٢﴾ وَإِذْ قَالَ لُقْمَانُ لِابْنِهِ وَهُوَ يَعِظُهُ يَا بُنَيَّ لَا تُشْرِكْ بِاللَّهِ إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ ﴿١٣﴾ وَوَصَّيْنَا الْإِنْسَانَ بِوَالِدَيْهِ حَمَلَتْهُ أُمُّهُ وَهْنًا عَلَى وَهْنٍ وَفِصَالُهُ فِي عَامَيْنِ أَنِ اشْكُرْ لِي وَلِوَالِدَيْكَ إِلَيَّ الْمَصِيرُ ﴿١٤﴾</p>
-        <p><strong>Artinya:</strong></p>
-        <p>12. Dan sesungguhnya telah Kami berikan hikmat kepada Luqman, yaitu: "Bersyukurlah kepada Allah. Dan barangsiapa yang bersyukur (kepada Allah), maka sesungguhnya ia bersyukur untuk dirinya sendiri; dan barangsiapa yang tidak bersyukur, maka sesungguhnya Allah Maha Kaya lagi Maha Terpuji".</p>
-        <p>13. Dan (ingatlah) ketika Luqman berkata kepada anaknya, di waktu ia memberi pelajaran kepadanya: "Hai anakku, janganlah kamu mempersekutukan Allah, sesungguhnya mempersekutukan (Allah) adalah benar-benar kezaliman yang besar".</p>
-        <p>14. Dan Kami perintahkan kepada manusia (berbuat baik) kepada dua orang ibu bapanya; ibunya telah mengandungnya dalam keadaan lemah yang bertambah-tambah, dan menyapihnya dalam dua tahun. Bersyukurlah kepada-Ku dan kepada dua orang ibu bapakmu, hanya kepada-Kulah kembalimu.</p>
-    </div>
-    
-    <div class="dalil">
-        <h3>36. Al-Baqarah: 83</h3>
-        <p class="arab">وَإِذْ أَخَذْنَا مِيثَاقَ بَنِي إِسْرَائِيلَ لَا تَعْبُدُونَ إِلَّا اللَّهَ وَبِالْوَالِدَيْنِ إِحْسَانًا وَذِي الْقُرْبَى وَالْيَتَامَى وَالْمَسَاكِينِ وَقُولُوا لِلنَّاسِ حُسْنًا وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ ثُمَّ تَوَلَّيْتُمْ إِلَّا قَلِيلًا مِنْكُمْ وَأَنْتُمْ مُعْرِضُونَ</p>
-        <p><strong>Artinya:</strong> Dan (ingatlah), ketika Kami mengambil janji dari Bani Israil (yaitu): janganlah kamu menyembah selain Allah, dan berbuat baiklah kepada ibu bapa, kaum kerabat, anak-anak yatim, dan orang-orang miskin, serta ucapkanlah kata-kata yang baik kepada manusia, dirikanlah shalat dan tunaikanlah zakat. Kemudian kamu tidak memenuhi janji itu, kecuali sebahagian kecil daripada kamu, dan kamu selalu berpaling.</p>
-    </div>
+          <h3>27. Ar-Rum: 21</h3>
+          <p class="arab">وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً</p>
+          <p class="latin">Waja‘ala bainakum mawaddatan wa raḥmah</p>
+          <p><strong>Artinya:</strong> "Dan dijadikan-Nya diantaramu rasa kasih dan sayang."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>28. Al-Hujurat: 10</h3>
+          <p class="arab">إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ</p>
+          <p class="latin">Innamal-mu’minūna ikhwah</p>
+          <p><strong>Artinya:</strong> "Sesungguhnya orang-orang mukmin itu bersaudara."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>29. Al-Baqarah: 120</h3>
+          <p class="arab">وَلَنْ تَرْضَى عَنْكَ الْيَهُودُ وَلَا النَّصَارَى حَتَّى تَتَّبِعَ مِلَّتَهُمْ</p>
+          <p class="latin">Wa lan tarḍā ‘anka al-yahūdu wa lan-naṣārā ḥattā tattabi‘a millatahum</p>
+          <p><strong>Artinya:</strong> "Orang-orang Yahudi dan Nasrani tidak akan senang kepada kamu hingga kamu mengikuti agama mereka."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>30. Al-Mujadilah: 11</h3>
+          <p class="arab">يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنْكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ</p>
+          <p class="latin">Yarfa‘illāhul-ladzīna āmanū minkum wal-ladzīna ūtul-‘ilma darajāt, wallāhu bimā ta‘malūna khabīr</p>
+          <p><strong>Artinya:</strong> "Niscaya Allah akan meninggikan orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa derajat. Dan Allah Maha Mengetahui apa yang kamu kerjakan."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>31. Al-Baqarah: 191</h3>
+          <p class="arab">... وَالْفِتْنَةُ أَشَدُّ مِنَ الْقَتْلِ</p>
+          <p class="latin">...wal-fitnatu asyaddu minal-qatli...</p>
+          <p><strong>Artinya:</strong> "...dan fitnah itu lebih besar bahayanya dari pembunuhan."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>32. Ali-Imran: 92</h3>
+          <p class="arab">لَنْ تَنَالُوا الْبِرَّ حَتّٰى تُنْفِقُوْا مِمَّا تُحِبُّوْنَۗ وَمَا تُنْفِقُوْا مِنْ شَيْءٍ فَاِنَّ اللّٰهَ بِهٖ عَلِيْمٌ</p>
+          <p class="latin">Lan tanālū al-birra ḥattā tunfiqū mimmā tuḥibbūn, wa mā tunfiqū min syai’in fa innallāha bihi ‘alīm</p>
+          <p><strong>Artinya:</strong> "Kamu sekali-kali tidak sampai kepada kebajikan (yang sempurna), sebelum kamu menafkahkan sebahagian harta yang kamu cintai. Dan apa saja yang kamu nafkahkan maka sesungguhnya Allah mengetahuinya."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>33. Al-Baqarah: 3</h3>
+          <p class="arab">الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنْفِقُونَ</p>
+          <p class="latin">Alladzīna yu’minūna bil-ghaibi wa yuqīmūna aṣ-ṣalāta wa mimmā razaqnāhum yunfiqūn</p>
+          <p><strong>Artinya:</strong> "(Yaitu) mereka yang beriman kepada yang ghaib, yang mendirikan shalat, dan menafkahkan sebahagian rezeki yang Kami anugerahkan kepada mereka."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>34. Ali-Imran: 190-192</h3>
+          <p class="arab">إِنَّ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ لَآيَاتٍ لِأُولِي الْأَلْبَابِ ﴿١٩٠﴾ الَّذِينَ يَذْكُرُونَ اللَّهَ قِيَامًا وَقُعُودًا وَعَلَى جُنُوبِهِمْ وَيَتَفَكَّرُونَ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ رَبَّنَا مَا خَلَقْتَ هَذَا بَاطِلًا سُبْحَانَكَ فَقِنَا عَذَابَ النَّارِ ﴿١٩١﴾ رَبَّنَا إِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ أَخْزَيْتَهُ وَمَا لِلظَّالِمِينَ مِنْ أَنْصَارٍ ﴿١٩٢﴾</p>
+          <p class="latin">(190) Inna fī khalqi as-samāwāti wal-arḍi wa ikhtilāfi al-laili wan-nahāri la-āyātin li-ulī al-albāb. (191) Alladhīna yadhkurūna Allāha qiyāman wa qu‘ūdan wa ‘alā junūbihim wa yatafakkarūna fī khalqi as-samāwāti wal-arḍi, rabbana mā khalaqta hādhā bāṭilan subḥānaka faqina ‘adhāba an-nār. (192) Rabbana innaka man tudkhili an-nāra faqad akhzaitahu wa mā liẓ-ẓālimīna min anṣār.</p>
+          <p><strong>Artinya:</strong></p>
+          <p>190. "Sesungguhnya dalam penciptaan langit dan bumi, dan silih bergantinya malam dan siang terdapat tanda-tanda bagi orang-orang yang berakal."</p>
+          <p>191. "(Yaitu) orang-orang yang mengingat Allah sambil berdiri atau duduk atau dalam keadaan berbaring dan mereka memikirkan tentang penciptaan langit dan bumi (seraya berkata): "Ya Tuhan kami, Tiadalah Engkau menciptakan ini dengan sia-sia, Maha suci Engkau, maka peliharalah kami dari siksa neraka."</p>
+          <p>192. "Ya Tuhan kami, sesungguhnya barangsiapa yang Engkau masukkan ke dalam neraka, maka sungguh telah Engkau hinakan ia, dan tidak ada bagi orang-orang yang zalim seorang penolongpun."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>35. Luqman: 12-14</h3>
+          <p class="arab">وَلَقَدْ آتَيْنَا لُقْمَانَ الْحِكْمَةَ أَنِ اشْكُرْ لِلَّهِ وَمَنْ يَشْكُرْ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ وَمَنْ كَفَرَ فَإِنَّ اللَّهَ غَنِيٌّ حَمِيدٌ ﴿١٢﴾ وَإِذْ قَالَ لُقْمَانُ لِابْنِهِ وَهُوَ يَعِظُهُ يَا بُنَيَّ لَا تُشْرِكْ بِاللَّهِ إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ ﴿١٣﴾ وَوَصَّيْنَا الْإِنْسَانَ بِوَالِدَيْهِ حَمَلَتْهُ أُمُّهُ وَهْنًا عَلَى وَهْنٍ وَفِصَالُهُ فِي عَامَيْنِ أَنِ اشْكُرْ لِي وَلِوَالِدَيْكَ إِلَيَّ الْمَصِيرُ ﴿١٤﴾</p>
+          <p class="latin">(12)Wa laqad ātaynā Luqmāna al-ḥikmata ani usykur lillāh, wa man yasykur fa innamā yasykuru linafsih, wa man kafara fa innallāha ghanīyun ḥamīd. (13) Wa idz qāla Luqmānu libnihi wa huwa ya‘iẓuhu yā bunayya lā tusyrik billāh, inna asy-syirka laẓulmun ‘aẓīm. (14) Wa waṣṣainā al-insāna biwālidayhi ḥamalat-hu ummuhu wahnan ‘alā wahnin wa fiṣāluhu fī ‘āmaini ani usykur lī wa liwālidayka ilayya al-maṣīr.</p>
+          <p><strong>Artinya:</strong></p>
+          <p>12. "Dan sesungguhnya telah Kami berikan hikmat kepada Luqman, yaitu: "Bersyukurlah kepada Allah. Dan barangsiapa yang bersyukur (kepada Allah), maka sesungguhnya ia bersyukur untuk dirinya sendiri; dan barangsiapa yang tidak bersyukur, maka sesungguhnya Allah Maha Kaya lagi Maha Terpuji".</p>
+          <p>13. "Dan (ingatlah) ketika Luqman berkata kepada anaknya, di waktu ia memberi pelajaran kepadanya: "Hai anakku, janganlah kamu mempersekutukan Allah, sesungguhnya mempersekutukan (Allah) adalah benar-benar kezaliman yang besar".</p>
+          <p>14. "Dan Kami perintahkan kepada manusia (berbuat baik) kepada dua orang ibu bapanya; ibunya telah mengandungnya dalam keadaan lemah yang bertambah-tambah, dan menyapihnya dalam dua tahun. Bersyukurlah kepada-Ku dan kepada dua orang ibu bapakmu, hanya kepada-Kulah kembalimu."</p>
+      </div>
+      
+      <div class="dalil">
+          <h3>36. Al-Baqarah: 83</h3>
+          <p class="arab">وَإِذْ أَخَذْنَا مِيثَاقَ بَنِي إِسْرَائِيلَ لَا تَعْبُدُونَ إِلَّا اللَّهَ وَبِالْوَالِدَيْنِ إِحْسَانًا وَذِي الْقُرْبَى وَالْيَتَامَى وَالْمَسَاكِينِ وَقُولُوا لِلنَّاسِ حُسْنًا وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ ثُمَّ تَوَلَّيْتُمْ إِلَّا قَلِيلًا مِنْكُمْ وَأَنْتُمْ مُعْرِضُونَ</p>
+          <p class="latin">Wa idz akhadznā mīṡāqa banī isrāīla lā ta‘budūna illallāha wa bil-wālidayni iḥsānā wa żil-qurbā wal-yatāmā wal-masākīni wa qūlū lin-nāsi ḥusnā wa aqīmūṣ-ṣalāta wa ātūz-zakāta ṡumma tawallaitum illā qalīlam minkum wa antum mu‘riḍūn</p>
+          <p><strong>Artinya:</strong> "Dan (ingatlah), ketika Kami mengambil janji dari Bani Israil (yaitu): janganlah kamu menyembah selain Allah, dan berbuat baiklah kepada ibu bapa, kaum kerabat, anak-anak yatim, dan orang-orang miskin, serta ucapkanlah kata-kata yang baik kepada manusia, dirikanlah shalat dan tunaikanlah zakat. Kemudian kamu tidak memenuhi janji itu, kecuali sebahagian kecil daripada kamu, dan kamu selalu berpaling."</p>
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="footer-content">
-        <div class="suggestion-box-container">
-            <a target="_blank" class="suggestion-box" id="suggestionBox">
-                <i class="fas fa-envelope envelope-icon"></i>
-                <span class="tooltip">Kotak Saran</span>
-            </a>
-        </div>
+      <div class="suggestion-box-container">
+        <a target="_blank" class="suggestion-box" id="suggestionBox">
+          <i class="fas fa-envelope envelope-icon"></i>
+          <span class="tooltip">Kotak Saran</span>
+        </a>
+      </div>
     </div>
     <p>&copy; Cinta Menghafal</p>
-
-    <script src="script.js"></script>
   </footer>
 
+  <script src="script.js"></script>
   <script>
     function showSection(id) {
       document.querySelectorAll('.content-section').forEach(section => {
