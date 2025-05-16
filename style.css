@@ -23,6 +23,11 @@
   main {
     padding: 10px;
   }
+
+  .tooltip {
+    left: 50%;
+    margin-left: -90px; /* lebih ke kiri pada layar kecil */
+  }
 }
 
 /* === Umum / Global === */
