@@ -257,8 +257,8 @@ footer {
   position: absolute;
   z-index: 1;
   bottom: 125%;
-  left: 60%;
-  margin-left: -70px;
+  left: 50%;
+  margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
 }
