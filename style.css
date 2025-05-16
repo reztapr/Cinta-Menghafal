@@ -25,10 +25,13 @@
   }
 
   .darkmode-toggle {
-    top: 10px;
+    position: absolute;
+    top: auto;
+    bottom: 10px;
     right: 10px;
-    width: 40px;
-    height: 40px;
+    left: auto;
+    width: 44px;
+    height: 44px;
     z-index: 3000;
   }
 }
